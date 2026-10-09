@@ -1,1 +1,7 @@
-Unit 3 for Jesus Garcia's homework. OOP 2026.
+ESPE 2609 - Object Oriented Programming SW 36863
+
+Unit 3 Homework
+
+Instructor: Edison Lascano
+
+Name: Jesus Garcia
