@@ -1,0 +1,1 @@
+console.log("Hello OOP Programmers from Dennis Noboa using TypeScript");
