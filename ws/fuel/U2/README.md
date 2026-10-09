@@ -1,7 +1,7 @@
 ESPE 2609 - Object Oriented Programming SW 36863
 
-Unit 3 Homework
+Unit 2 Workshops
 
 Instructor: Edison Lascano
 
-Name: Jesus Garcia
+Name: Alejandro Fuel
