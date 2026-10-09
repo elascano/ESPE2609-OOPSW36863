@@ -1,0 +1,2 @@
+"use strict";
+console.log("Hello from Jesus Garcia using Typescript");
