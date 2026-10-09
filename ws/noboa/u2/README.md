@@ -2,11 +2,7 @@
 
 
 
-## ESPE 2609 - Object Oriented Programming SW 36863
-
-
-
-### Unit 2 Workshop
+## Unit 2 Workshop
 
 
 
@@ -15,6 +11,4 @@
 
 
 **Name:** Dennis Noboa
-
-
 

@@ -2,11 +2,7 @@
 
 
 
-## ESPE 2609 - Object Oriented Programming SW 36863
-
-
-
-### Unit 3 Homework
+## Unit 3 Homework
 
 
 
@@ -15,6 +11,4 @@
 
 
 **Name:** Dennis Noboa
-
-
 
