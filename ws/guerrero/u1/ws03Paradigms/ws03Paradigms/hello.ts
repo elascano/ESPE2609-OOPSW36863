@@ -1,1 +1,0 @@
-console.log (Hello from Stalyn Guerrero using TypeScript);
