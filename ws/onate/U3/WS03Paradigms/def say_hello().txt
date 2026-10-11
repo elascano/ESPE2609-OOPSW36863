@@ -1,0 +1,9 @@
+def say_hello()
+	print("Hello Python,I am a fuction and my name is Martin")
+
+def return_hello();
+	return"Martin is returned by a fuction to be printed out"
+
+sqay_hello():
+
+return_hello();
