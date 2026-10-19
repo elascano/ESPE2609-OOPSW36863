@@ -19,6 +19,14 @@ public class Poop {
         this.color = color;
         this.consistency = consistency;
     }
+    
+    
+    @Override
+    public String toString() {
+    return "Poop{"+ "id=" + id+ ", color=" + color+ ", consistency=" + consistency+ '}';
+}
+
+    
 
     /**
      * @return the id
