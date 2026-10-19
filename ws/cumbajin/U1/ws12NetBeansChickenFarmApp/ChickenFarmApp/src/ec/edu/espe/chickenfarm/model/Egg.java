@@ -27,6 +27,14 @@ public class Egg {
     public char getSize(){
         return size;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     
     
 }

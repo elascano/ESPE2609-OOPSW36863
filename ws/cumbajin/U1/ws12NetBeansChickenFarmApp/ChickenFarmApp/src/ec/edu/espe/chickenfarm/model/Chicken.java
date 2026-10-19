@@ -2,9 +2,9 @@
 package ec.edu.espe.chickenfarm.model;
 
 import java.util.Date;
-import java.time.LocalDate;
-import java.time.Period;
-import java.time.ZoneId;
+import java.util.Calendar;
+
+
 
 /**
  *
@@ -20,33 +20,70 @@ public class Chicken {
     private boolean molting;
 
     public int computeAgeInYears() {
-        if (bornOnDate == null) {
-            throw new IllegalStateException("Birth date is required");
+        int age = 0;
+
+        Calendar birth = Calendar.getInstance();
+        birth.setTime(bornOnDate);
+
+        Calendar today = Calendar.getInstance();
+
+        age = today.get(Calendar.YEAR) - birth.get(Calendar.YEAR);
+
+        if (today.get(Calendar.MONTH) < birth.get(Calendar.MONTH)) {
+            age--;
+        } else if (today.get(Calendar.MONTH) == birth.get(Calendar.MONTH)
+                && today.get(Calendar.DAY_OF_MONTH) < birth.get(Calendar.DAY_OF_MONTH)) {
+            age--;
         }
 
-        LocalDate birthDate = bornOnDate.toInstant()
-                .atZone(ZoneId.systemDefault())
-                .toLocalDate();
-
-        LocalDate today = LocalDate.now();
-
-        if (birthDate.isAfter(today)) {
-            throw new IllegalArgumentException(
-                    "Birth date cannot be in the future");
-        }
-
-        ageInYears = Period.between(birthDate, today).getYears();
-
-        return ageInYears;
+        return age;
     }
+    
+    
+    public void doStuff(){
+        cluck();
+        wander();
+        drink(1.3F);
+        System.out.println("poop -->" + poop());
+        System.out.println("egg -->" + layAnEgg());
+        
+    }
+    
+    private void cluck(){
+        System.out.println("The chicken "+ name + "is clucking ...");
+    }
+    
+    private void wander(){
+        System.out.println("The chicken "+ name + "is wandering ...");
+    }
+    
+    private void eat(){
+        System.out.println("The chicken "+ name + "is eating ...");
+    }
+    
+    private void drink(float amountOfWater){
+        System.out.println("The chicken "+ name + "is drinking-->" + amountOfWater +"ml of water" );
+    }
+    
+    private Poop poop(){
+        Poop poop;
+        poop = new Poop(2, "green", 'M');
+        return poop;
+    }
+    
+    private Egg layAnEgg(){
+        Egg egg;
+        egg = new Egg(2, 'S');
+        return egg;
+    }
+    
 
-    public Chicken(int id, String name, String color,
-            Date bornOnDate, int ageInYears, boolean molting) {
+    public Chicken(int id, String name, String color,Date bornOnDate, boolean molting) {
         this.id = id;
         this.name = name;
         this.color = color;
         this.bornOnDate = bornOnDate;
-        this.ageInYears = ageInYears;
+        this.ageInYears = computeAgeInYears();
         this.molting = molting;
     }
 
@@ -103,6 +140,10 @@ public class Chicken {
 
     public void setAgeInYears(int ageInYears) {
         this.ageInYears = ageInYears;
+    }
+    
+    public void setAgeInYears() {
+        this.ageInYears = computeAgeInYears();
     }
 
     public boolean isMolting() {
