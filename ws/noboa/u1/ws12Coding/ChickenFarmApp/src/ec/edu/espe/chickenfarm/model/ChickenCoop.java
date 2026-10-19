@@ -6,8 +6,10 @@ package ec.edu.espe.chickenfarm.model;
 
 /**
  *
- * @author Alejandro
+ * @author Dennis Noboa, 404 Founder, @ESPE
  */
 public class ChickenCoop {
+    int chickenCoopId;
+    Chicken chickens[];
     
 }
