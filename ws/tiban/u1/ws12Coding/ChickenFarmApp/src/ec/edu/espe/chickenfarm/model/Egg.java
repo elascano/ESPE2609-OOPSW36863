@@ -5,8 +5,8 @@ package ec.edu.espe.chickenfarm.model;
  * @author Andy Tiban, IV Studio, @ESPE
  */
 public class Egg {
-    int id;
-    char size;
+    private int id;
+    private char size;
  
     
     
@@ -17,7 +17,7 @@ public class Egg {
 
     @Override
     public String toString() {
-        return "Egg{" + "id=" + id + ", size=" + size + '}';
+        return "Egg{" + "id=" + getId() + ", size=" + getSize() + '}';
     }
    
    
@@ -25,5 +25,26 @@ public class Egg {
 public char getSize(){
     return size;
 }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * @param size the size to set
+     */
+    public void setSize(char size) {
+        this.size = size;
+    }
 
 } 

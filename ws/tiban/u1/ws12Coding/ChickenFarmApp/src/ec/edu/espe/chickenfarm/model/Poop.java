@@ -56,6 +56,11 @@ public class Poop {
     public void setConsistency(char consistency) {
         this.consistency = consistency;
     }
+
+    @Override
+    public String toString() {
+        return "Poop{" + "id=" + id + ", color=" + color + ", consistency=" + consistency + '}';
+    }
     
     
     
