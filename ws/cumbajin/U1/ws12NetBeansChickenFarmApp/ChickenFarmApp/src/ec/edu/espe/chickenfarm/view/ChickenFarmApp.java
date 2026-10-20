@@ -75,6 +75,39 @@ public class ChickenFarmApp {
         for (int i = 0; i < 10; i++) {
             System.out.println("chickens --> " + chickens[i]);
         }
+        
+
+        coop = new ChickenCoop(1, new Chicken[10]);
+
+        // Testing add()
+        System.out.println("\n--- ADD CHICKENS ---");
+        coop.add(chicken);
+        coop.add(chicken1);
+
+        // Testing next()
+        System.out.println("\n--- LIST CHICKENS ---");
+        coop.resetIteration();
+
+        Chicken currentChicken;
+
+        while ((currentChicken = coop.next()) != null) {
+            System.out.println("Chicken --> "+ currentChicken.getName()+ ", ID --> " + currentChicken.getId());
+        }
+
+        // Testing remove()
+        System.out.println("\n--- REMOVE CHICKEN ---");
+        coop.remove(2);
+
+        // Verify remaining chickens
+        System.out.println("\n--- REMAINING CHICKENS ---");
+        coop.resetIteration();
+
+        while ((currentChicken = coop.next()) != null) {
+            System.out.println("Chicken --> "+ currentChicken.getName()+ ", ID --> " + currentChicken.getId());
+        }
+
+       
+
 
     }
 }
