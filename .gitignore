@@ -23,6 +23,7 @@
 hs_err_pid*
 replay_pid*
 <<<<<<< HEAD
+<<<<<<< HEAD
 /ws/ruiz/u1/ws12Coding/ChickenFarmApp/nbproject/private/
 /ws/ruiz/u1/ws12Coding/ChickenFarmApp/build/
 =======
@@ -30,3 +31,13 @@ replay_pid*
 /ws/noboa/u1/ws12Coding/ChickenFarmApp/build/
 /ws/noboa/u1/ws12Coding/ChickenFarmApp/dist/
 >>>>>>> 1efab3c1bcdb63c55b8d805931ba3af9b63d128e
+=======
+<<<<<<< Updated upstream
+/ws/noboa/u1/ws12Coding/ChickenFarmApp/nbproject/private/
+/ws/noboa/u1/ws12Coding/ChickenFarmApp/build/
+=======
+/ws/garcia/u1/ws12Code/ChickenFarmApp/nbproject/private/
+/ws/garcia/u1/ws12Code/ChickenFarmApp/build/
+/ws/garcia/u1/ws12Code/ChickenFarmApp/dist/
+>>>>>>> Stashed changes
+>>>>>>> 98dd26f (Update ChickenFarmApp implementation and model classes)
