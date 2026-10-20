@@ -22,3 +22,7 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/ws/guerrero/u1/ws12Code/JavaApplication2/nbproject/private/
+/ws/guerrero/u1/ws12Code/JavaApplication2/build/
+/ws/guerrero/u1/ws12Code/ChickenFarmApp/nbproject/private/
+/ws/guerrero/u1/ws12Code/ChickenFarmApp/build/
