@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compiled class file
 *.class
 
@@ -58,3 +59,8 @@ replay_pid*
 >>>>>>> 98dd26f (Update ChickenFarmApp implementation and model classes)
 >>>>>>> 129da4eba9b2d4959fcd2c80663fdd48a44224fb
 >>>>>>> 97834afa5a36369285a1fad4e6e50a5cb2cab5a9
+=======
+**/nbproject/private/
+**/build/
+**/dist/
+>>>>>>> 618c506548e09816234ca053e0b0e5281c151033

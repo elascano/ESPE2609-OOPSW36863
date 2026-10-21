@@ -11,16 +11,32 @@ public class ChickenCoop {
     private Chicken chickens[]=new Chicken[10];
     private int currentIndex;
     
-    //we need to know the maximun. int this case is 10
-    //we need to know the index
-    public void add(Chicken chicken){}
-    //algorithm
+
+    public void add(Chicken chicken){
+        for(int i=0; i<chickens.length;i++){
+            if(chickens[i]==null){
+                chickens[i]= chicken;
+                break;
+            }
+        }
+    }
     
-    
-    public void remove(int chickenId){}//pendiente los metodos
+    public void remove(int chickenId){
+            for(int i=0;i<chickens.length;i++){
+                if(chickens[i]!=null&&chickens[i].getId()==chickenId){
+                    chickens[i]=null;
+                    break;
+                }
+            }
+    }
     
     public Chicken next(){
-    return new Chicken(3,"Lucy","white",new Date(2020,3,3),true);
+        Chicken nextChicken =null;
+        if (currentIndex < chickens.length) {
+            nextChicken = chickens[currentIndex];
+            currentIndex++; 
+        }
+        return nextChicken;   
     }
     
     

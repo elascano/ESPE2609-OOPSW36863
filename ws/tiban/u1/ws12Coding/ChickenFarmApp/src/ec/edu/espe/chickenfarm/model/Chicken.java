@@ -175,8 +175,13 @@ public class Chicken {
 
     @Override
     public String toString() {
-        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", bornOnDate=" + bornOnDate + ", age=" + ageInYears + ", molting=" + molting + '}';
+        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", bornOnDate=" + bornOnDate + ", ageInYears=" + ageInYears + ", molting=" + molting + '}';
     }
+
+    
+    
+    
+
 }
 
 

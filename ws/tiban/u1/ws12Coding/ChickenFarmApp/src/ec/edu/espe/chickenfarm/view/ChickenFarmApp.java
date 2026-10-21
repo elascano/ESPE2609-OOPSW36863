@@ -1,6 +1,7 @@
 package ec.edu.espe.chickenfarm.view;
 
 import ec.edu.espe.chickenfarm.model.Chicken;
+import ec.edu.espe.chickenfarm.model.ChickenCoop;
 import ec.edu.espe.chickenfarm.model.Egg;
 import ec.edu.espe.chickenfarm.model.Poop;
 import java.util.Date;
@@ -57,6 +58,19 @@ public class ChickenFarmApp {
         for(int i=0;i<10;i++){
         System.out.println("chickens--->"+chickens[i]);
         }
+        
+        
+       
+    ChickenCoop chickenCoop1 = new ChickenCoop(1, new Chicken[10]); 
+
+    chickenCoop1.add(chicken);  
+    chickenCoop1.add(chicken1); 
+
+    System.out.println("Taking out of the chicken coop: " + chickenCoop1.next());
+    System.out.println("taking out of the chicken coop: " + chickenCoop1.next());
+
+    chickenCoop1.remove(2);
+        
         
     }
     
