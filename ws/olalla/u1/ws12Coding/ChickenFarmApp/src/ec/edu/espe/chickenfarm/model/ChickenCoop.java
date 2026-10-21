@@ -1,53 +1,100 @@
-
 package ec.edu.espe.chickenfarm.model;
+
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  *
  * @author Julian Olalla, 64 wizards, @ESPE
  */
-public class ChickenCoop {
+public class ChickenCoop {    
+
     private int chickenCoopId;
-    private Chicken chickens[]= new Chicken[10];
-    private int curentIndex;
-    
-    // we need to know the maximum . in this case 15 10
-    // we need to know the index
-    
-    //Primer funncion añadir chickens a los arreglos
-    //Preguntar al usario que datos quiere borrar
-    //Corre al index regresa al 0
-    //Next toma al pollo siguiente de la lista, si esta en la posicion 0 se va al 1
+    private Chicken[] chickens = new Chicken[10];
+    private int chickenCount;   
+    private int currentIndex;   
+
+    public ChickenCoop(int chickenCoopId, Chicken[] chickens) {
+        this.chickenCoopId = chickenCoopId;
+        this.chickens = chickens;
+        this.chickenCount = 0;
+        for (Chicken chicken : chickens) {
+            if (chicken != null) {
+                chickenCount++;
+            }
+        }
+        this.currentIndex = 0;
+    }
     
     public void add(Chicken chicken) {
-       //algoritmo
-       
-       //if we hace less tan 10 chickens, we can add more
-       //else we cant add any more
-        if(chickens.length < 10) {
-            
+        // if we have less than 10 chickens, we can add more
+        if (chickenCount < chickens.length) {
+            chickens[chickenCount] = chicken;
+            chickenCount++;
+            System.out.println("Chicken added --> " + chicken.getName());
+        } else {
+            // else we can't add any more
+            System.out.println("The coop is full, we can't add more chickens");
         }
     }
     
     public void remove(int chickenId) {
+        int position = -1;
+
+        for (int i = 0; i < chickenCount; i++) {
+            if (chickens[i].getId() == chickenId) {
+                position = i;
+                break;
+            }
+        }
+
+        if (position == -1) {
+            System.out.println("There is no chicken with id " + chickenId);
+            return;
+        }
         
+        for (int i = position; i < chickenCount - 1; i++) {
+            chickens[i] = chickens[i + 1];
+        }
+        chickens[chickenCount - 1] = null;
+        chickenCount--;
+        
+        if (position < currentIndex) {
+            currentIndex--;
+        }
+
+        System.out.println("Chicken with id " + chickenId + " was removed");
     }
     
-    public void resetIteration(){
-        
-    }
+    public void remove() {
+       Scanner IfRemoveLoopContinues = new Scanner(System.in);
+       String inputForLoop;
+        do{
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the id of the chicken you want to remove: ");
+        int chickenId = scanner.nextInt();
+        remove(chickenId);         
+        System.out.print("Want to remove another chicken coop? (y/n): ");
+            inputForLoop = IfRemoveLoopContinues.nextLine();
+        } while (inputForLoop.equalsIgnoreCase("y"));  
+     }
     
-    public Chicken next(){
-        return new Chicken(3, "Lucy", "White", new Date(2020,3,3), true);
+    public void resetIteration() {
+        currentIndex = 0;
+    }
+  
+    public Chicken next() {
+        if (currentIndex >= chickenCount) {
+            return null; 
+        }
+        Chicken chicken = chickens[currentIndex];
+        currentIndex++;
+        return chicken;
     }
 
     @Override
     public String toString() {
-        return "ChickenCoop{" + "chickenCoopId=" + chickenCoopId + ", chickens=" + chickens + '}';
-    }
-
-    public ChickenCoop(int chickenCoopId, Chicken chickens) {
-        this.chickenCoopId = chickenCoopId;
-        this.chickens = chickens;
+        return "ChickenCoop{" + "chickenCoopId=" + chickenCoopId + ", chickens=" + Arrays.toString(chickens) + '}';
     }
 
     /**
@@ -67,17 +114,14 @@ public class ChickenCoop {
     /**
      * @return the chickens
      */
-    public Chicken getChickens() {
+    public Chicken[] getChickens() {
         return chickens;
     }
 
     /**
      * @param chickens the chickens to set
      */
-    public void setChickens(Chicken chickens) {
+    public void setChickens(Chicken[] chickens) {
         this.chickens = chickens;
     }
-    
-    
 }
-    
