@@ -9,7 +9,8 @@ import java.time.Period;
  * @author Nestor Olivo, Found ERROR 404, @ESPE
  */
 public final class Chicken {
-    private int idChicken = 0;
+    private static int nextId = 1;
+    private int idChicken;
     private String name;
     private String color;
     private LocalDate bornOnDate;
@@ -47,7 +48,7 @@ public final class Chicken {
         this.bornOnDate = bornOnDate;
         this.ageInYears = computeAgeYear();
         this.molting = molting;
-        this.idChicken++;
+        this.idChicken = nextId++;
     }
 
     public int getIdChicken() {
