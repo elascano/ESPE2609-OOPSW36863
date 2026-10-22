@@ -81,10 +81,10 @@ public class ChickenFarmApp {
         System.out.println(farmer);
     
     
-// 1. LEER LAS GALLINAS QUE YA EXISTEN EN EL JSON
+
         Chicken[] existingChickens = JsonManager.loadChickens();
         
-        // Contar cuántas gallinas válidas hay en el archivo (para ignorar los nulos)
+        
         int existingCount = 0;
         if (existingChickens != null) {
             for (Chicken c : existingChickens) {
