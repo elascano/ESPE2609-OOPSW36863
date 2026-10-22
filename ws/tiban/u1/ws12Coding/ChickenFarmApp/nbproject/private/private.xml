@@ -3,12 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USER/Documents/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/view/ChickenFarmApp.java</file>
-            <file>file:/C:/Users/USER/Documents/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/model/Chicken.java</file>
-            <file>file:/C:/Users/USER/Documents/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/model/Egg.java</file>
-            <file>file:/C:/Users/USER/Documents/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/model/Poop.java</file>
-            <file>file:/C:/Users/USER/Documents/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/model/ChickenFarmer.java</file>
-            <file>file:/C:/Users/USER/Documents/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/model/ChickenCoop.java</file>
+            <file>file:/C:/Users/USER/Documents/Repositorios%20de%20git/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/model/Egg.java</file>
+            <file>file:/C:/Users/USER/Documents/Repositorios%20de%20git/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/view/ChickenFarmApp.java</file>
+            <file>file:/C:/Users/USER/Documents/Repositorios%20de%20git/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/controller/CsvManager.java</file>
+            <file>file:/C:/Users/USER/Documents/Repositorios%20de%20git/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/view/InputHandler.java</file>
+            <file>file:/C:/Users/USER/Documents/Repositorios%20de%20git/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/model/Chicken.java</file>
+            <file>file:/C:/Users/USER/Documents/Repositorios%20de%20git/Repositorio%20de%20POO%20grupal/ESPE2609-OOPSW36863/ws/tiban/u1/ws12Coding/ChickenFarmApp/src/ec/edu/espe/chickenfarm/controller/JsonManager.java</file>
         </group>
     </open-files>
 </project-private>

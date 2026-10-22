@@ -15,19 +15,45 @@ public class ChickenCoop {
     //
 
     public void add(Chicken chicken){
-        //algorithm
-         // if we have a less than 10 chicknes, we cn add one more else we cant add anymore
+        if(currentIndex < chickens.length ){
+            chickens[currentIndex] = chicken;
+            currentIndex++;
+        }else{
+            System.out.println("Maxium!!");
         }
+    }
     
     public void remove(int chickenId){
-        
+        int index = -1;
+        for (int i=0; i< currentIndex; i++){
+            if(chickens[i].getId()== chickenId) {
+                index= i;
+                break;
+            }
+        }
+        if(index== -1){
+            System.out.println("No chicken was found with the ID -->" + chickenId);
+            return;
+        }
+        for (int i=index; i<currentIndex -1;i++){
+            chickens[i]= chickens[i+1];
+        }
+        chickens[currentIndex -1] = null;
+        currentIndex--;
     }
-    public void resetIteration(){
-        currentIndex =0;
-        
-    }
+    
     public Chicken next(){
-        return new Chicken(3, "Lucy", "white", new Date(2020,3,3), true);
+        //return new Chicken(3, "Lucy", "white", new Date(2020,3,3), true);
+        for(int i=0; i< chickens.length;i++){
+            if(chickens[i] != null){
+                return chickens[i];
+            }
+        }
+        return null;
+    }
+    
+    public void resetIteration(){
+        int iterationIndex =0;
     }
     
     @Override
