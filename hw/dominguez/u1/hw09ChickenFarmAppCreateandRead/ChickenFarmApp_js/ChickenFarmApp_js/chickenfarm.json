@@ -1,0 +1,39 @@
+{
+  "chickenFarmerId": 1,
+  "name": "Mateo",
+  "coops": [
+    {
+      "chickenCoopId": 1,
+      "chickens": [
+        {
+          "id": 5,
+          "name": "Danna",
+          "color": "White",
+          "bornOnDate": "2022-09-12T05:00:00.000Z",
+          "ageInYears": 0,
+          "molting": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "currentIndex": 1
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "currentIndex": 1
+}
