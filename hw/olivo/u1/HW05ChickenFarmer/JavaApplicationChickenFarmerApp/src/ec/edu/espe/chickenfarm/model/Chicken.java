@@ -17,6 +17,11 @@ public final class Chicken {
     private int ageInYears;
     private boolean molting;
     public void doSftuff(){
+        cluck();
+        eat();
+        drink(2);
+        poop();
+        layAnEgg();
         
     }
     private void cluck(){
@@ -37,7 +42,13 @@ public final class Chicken {
         return egg;
     }
     public int computeAgeYear(){
+        if (this.bornOnDate == null) {
+            return 0;
+        }
         LocalDate today = LocalDate.now();
+        if (bornOnDate.isAfter(today)) {
+            return 0;
+        }
         Period period = Period.between(this.bornOnDate, today);
         return period.getYears();
     }
@@ -50,6 +61,10 @@ public final class Chicken {
         this.molting = molting;
         this.idChicken = nextId++;
     }
+
+    public Chicken() {
+    }
+    
 
     public int getIdChicken() {
         return idChicken;
@@ -80,7 +95,7 @@ public final class Chicken {
     }
 
     public int getAgeInYears() {
-        return ageInYears;
+        return computeAgeYear();
     }
 
     public void setAgeInYears(int ageInYears) {
@@ -94,10 +109,27 @@ public final class Chicken {
     public void setMolting(boolean molting) {
         this.molting = molting;
     }
-
+    public static void updateNextId(int lastId) {
+        if (nextId <= lastId) {
+            nextId = lastId + 1;
+        }
+    }
     @Override
     public String toString() {
-        return "Chicken{" + "idChicken=" + idChicken + ", name=" + name + ", color=" + color + ", bornOnDate=" + bornOnDate + ", ageInYears=" + ageInYears + ", molting=" + molting + '}';
+        return "Chicken{"
+                + "idChicken=" + idChicken 
+                + ", name=" + name 
+                + ", color=" + color 
+                + ", bornOnDate=" + bornOnDate 
+                + ", ageInYears=" + ageInYears
+                + ", molting=" + molting + '}';
     }
+
+    public void setIdChicken(int idChicken) {
+        this.idChicken = idChicken;
+        updateNextId(idChicken);
+    }
+    
+    
     
 }

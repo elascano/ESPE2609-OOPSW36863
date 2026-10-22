@@ -66,4 +66,46 @@ public class ChickenCoop {
     public int getCount() {
         return this.currentId;
     }
+    public Chicken[] getChickens() {
+        Chicken[] savedChickens = new Chicken[this.currentId];
+        System.arraycopy(this.chickens, 0, savedChickens, 0, this.currentId);
+        return savedChickens;
+    }
+     public void loadChickens(Chicken[] savedChickens) {
+        this.chickens = new Chicken[MAX_CHICKEN];
+        this.currentId = 0;
+        this.counter = 0;
+        
+        if (savedChickens == null) {
+            return;
+        }
+        for (Chicken chicken : savedChickens) {
+            if (this.currentId >= this.chickens.length) {
+                System.out.println("The Chicken Coop is full");
+                break;
+            }
+            
+            if (chicken != null) {
+                this.chickens[this.currentId] = chicken;
+                this.currentId++;
+                Chicken.updateNextId(chicken.getIdChicken());
+                chicken.setAgeInYears(chicken.computeAgeYear());
+            }
+        }
+    }
+    @Override
+    public String toString() {
+        StringBuilder localChickens = new StringBuilder();
+
+        for (int i = 0; i < this.currentId; i++) {
+            localChickens.append(this.chickens[i]).append("\n");
+        }
+
+        return "ChickenCoop{"
+                + "idChickenCoop=" + idChickenCoop
+                + ", chickens=\n" + localChickens
+                + '}';
+    }
+
+    
 }
