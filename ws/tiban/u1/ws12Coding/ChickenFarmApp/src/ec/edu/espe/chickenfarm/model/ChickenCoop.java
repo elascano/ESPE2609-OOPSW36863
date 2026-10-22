@@ -83,8 +83,10 @@ public class ChickenCoop {
 
     @Override
     public String toString() {
-        return "ChickenCoop{" + "chickenCoopId=" + chickenCoopId + ", chickens=" + chickens + '}';
+        return "ChickenCoop{" + "chickenCoopId=" + chickenCoopId + ", chickens=" + chickens + ", currentIndex=" + currentIndex + '}';
     }
+
+
     
     
     

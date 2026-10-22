@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Maruja",
+        "color": "black and white",
+        "born_on_date": "2021-07-29",
+        "molting": false
+    },
+    {
+        "id": 2,
+        "name": "Chispas",
+        "color": "brown and black",
+        "born_on_date": "2025-12-01",
+        "molting": false
+    }
+]
