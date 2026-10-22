@@ -1,0 +1,11 @@
+id,name,color,bornOnDate,ageInYears,molting
+1,Claudio,light brown,2020-05-12,6,True
+2,Lucy,brown and white,2021-08-19,5,False
+3,Pepita,black,2022-01-10,4,True
+4,Marujita,black,2022-03-15,4,False
+5,Cocotte,white,2023-02-01,3,False
+6,Ginger,reddish brown,2023-06-20,3,True
+7,Rocky,speckled grey,2021-11-05,4,False
+8,Henrietta,golden brown,2024-04-10,2,False
+9,Penny,white,2024-07-22,2,True
+10,Bella,dark brown,2025-01-15,1,False
