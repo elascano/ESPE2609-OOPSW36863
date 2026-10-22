@@ -6,7 +6,7 @@ package ec.edu.espe.collections;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import ws15collectionxamples.ec.edu.espe.chickenfarm.model.Person;
+import ec.edu.espe.model.Person;
 
 /**
  *
