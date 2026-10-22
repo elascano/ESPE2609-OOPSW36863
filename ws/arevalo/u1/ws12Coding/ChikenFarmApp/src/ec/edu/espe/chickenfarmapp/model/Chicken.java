@@ -70,7 +70,7 @@ public class Chicken {
             age--;
         }
 
-        return age + 1900;
+        return age;
     }
     
     @Override
