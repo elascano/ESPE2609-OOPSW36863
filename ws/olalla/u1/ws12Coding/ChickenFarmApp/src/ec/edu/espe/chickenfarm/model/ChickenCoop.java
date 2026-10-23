@@ -1,6 +1,5 @@
 package ec.edu.espe.chickenfarm.model;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -94,7 +93,13 @@ public class ChickenCoop {
 
     @Override
     public String toString() {
-        return "ChickenCoop{" + "chickenCoopId=" + chickenCoopId + ", chickens=" + Arrays.toString(chickens) + '}';
+        String localChickens;
+        localChickens= "";
+        for(Chicken chicken : chickens){
+            localChickens += chicken;
+            localChickens += "\n\t";
+        }
+        return "ChickenCoop{" + "chickenCoopId=" + chickenCoopId + ", chickens=" + localChickens + '}';
     }
 
     /**

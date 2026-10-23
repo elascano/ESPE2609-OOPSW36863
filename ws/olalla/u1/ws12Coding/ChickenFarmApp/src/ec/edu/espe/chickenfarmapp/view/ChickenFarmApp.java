@@ -2,6 +2,7 @@ package ec.edu.espe.chickenfarmapp.view;
 
 import ec.edu.espe.chickenfarm.model.Chicken;
 import ec.edu.espe.chickenfarm.model.ChickenCoop;
+import ec.edu.espe.chickenfarm.model.ChickenFarmer;
 import ec.edu.espe.chickenfarm.model.Egg;
 import ec.edu.espe.chickenfarm.model.Poop;
 import java.util.Date;
@@ -21,6 +22,7 @@ public class ChickenFarmApp {
         Poop poop;
         ChickenCoop coop;
         Chicken[] chickens = new Chicken[10];
+        ChickenFarmer chickenFarmer;
         
         chicken = new Chicken(2, "Maruja", "brown and white", new Date(1970, 7, 15), true); //instiation
         chicken.setAgeInYears();
@@ -50,8 +52,7 @@ public class ChickenFarmApp {
         for (int i = 0; i < 10; i++) {
             System.out.println("chickens --> " + chickens[i]);
         }
-        
-        @SuppressWarnings("UnusedAssignment")
+                
         int ageForTheLoop=0;
         for (int i = 0; i < chickens.length; i++) {
             ageForTheLoop = 2010 + i;
@@ -96,5 +97,16 @@ public class ChickenFarmApp {
             System.out.println(current);
             current = coop.next();
         }
-    }
-}
+        
+        System.out.println("==========");
+        System.out.println("2026 10 21");
+        chickenFarmer = new ChickenFarmer();
+        
+        System.out.println("chicken Farmer --> " + chickenFarmer);
+        
+        
+        //TODO CREAR ARREGLOS ARCHIVO DE POLLITOS Y LEERLOS DESDE EL ARCHIVO
+        //TODO GUARDAR LOS POLLOS EN JSON Y CSV 
+        //TODOJSON --> GUARDAR ARCHIVO --> LEER EL ARCHIVO
+    }      
+} 
