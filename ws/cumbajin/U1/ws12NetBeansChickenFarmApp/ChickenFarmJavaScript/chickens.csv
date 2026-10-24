@@ -1,0 +1,11 @@
+id,name,color,bornOnDate,ageInYears,molting
+0,chicken 1,white,1270270800000,16,true
+1,chicken 2,white,1301806800000,15,true
+2,chicken 3,white,1333429200000,14,true
+3,chicken 4,white,1364965200000,13,true
+4,chicken 5,white,1396501200000,12,true
+5,chicken 6,white,1428037200000,11,true
+6,chicken 7,white,1459659600000,10,true
+7,chicken 8,white,1491195600000,9,true
+8,chicken 9,white,1522731600000,8,true
+9,chicken 10,white,1554267600000,7,true

@@ -1,0 +1,82 @@
+[
+    {
+        "id": 0,
+        "name": "chicken 1",
+        "color": "white",
+        "bornOnDate": "2010-04-03T05:00:00.000Z",
+        "ageInYears": 16,
+        "molting": true
+    },
+    {
+        "id": 1,
+        "name": "chicken 2",
+        "color": "white",
+        "bornOnDate": "2011-04-03T05:00:00.000Z",
+        "ageInYears": 15,
+        "molting": true
+    },
+    {
+        "id": 2,
+        "name": "chicken 3",
+        "color": "white",
+        "bornOnDate": "2012-04-03T05:00:00.000Z",
+        "ageInYears": 14,
+        "molting": true
+    },
+    {
+        "id": 3,
+        "name": "chicken 4",
+        "color": "white",
+        "bornOnDate": "2013-04-03T05:00:00.000Z",
+        "ageInYears": 13,
+        "molting": true
+    },
+    {
+        "id": 4,
+        "name": "chicken 5",
+        "color": "white",
+        "bornOnDate": "2014-04-03T05:00:00.000Z",
+        "ageInYears": 12,
+        "molting": true
+    },
+    {
+        "id": 5,
+        "name": "chicken 6",
+        "color": "white",
+        "bornOnDate": "2015-04-03T05:00:00.000Z",
+        "ageInYears": 11,
+        "molting": true
+    },
+    {
+        "id": 6,
+        "name": "chicken 7",
+        "color": "white",
+        "bornOnDate": "2016-04-03T05:00:00.000Z",
+        "ageInYears": 10,
+        "molting": true
+    },
+    {
+        "id": 7,
+        "name": "chicken 8",
+        "color": "white",
+        "bornOnDate": "2017-04-03T05:00:00.000Z",
+        "ageInYears": 9,
+        "molting": true
+    },
+    {
+        "id": 8,
+        "name": "chicken 9",
+        "color": "white",
+        "bornOnDate": "2018-04-03T05:00:00.000Z",
+        "ageInYears": 8,
+        "molting": true
+    },
+    {
+        "id": 9,
+        "name": "chicken 10",
+        "color": "white",
+        "bornOnDate": "2019-04-03T05:00:00.000Z",
+        "ageInYears": 7,
+        "molting": true
+    }
+]
