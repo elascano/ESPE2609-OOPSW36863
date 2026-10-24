@@ -1,0 +1,42 @@
+[
+  {
+    "id": 3,
+    "name": "pedro",
+    "color": "black",
+    "bornOnDate": "Nov 21, 2020, 12:00:00 AM",
+    "ageInYears": 0,
+    "molting": true
+  },
+  {
+    "id": 1,
+    "name": "harold",
+    "color": "brown",
+    "bornOnDate": "Nov 21, 2020, 12:00:00 AM",
+    "ageInYears": 0,
+    "molting": false
+  },
+  {
+    "id": 2,
+    "name": "pepe",
+    "color": "black",
+    "bornOnDate": "Nov 14, 2019, 12:00:00 AM",
+    "ageInYears": 0,
+    "molting": true
+  },
+  {
+    "id": 3,
+    "name": "santiago",
+    "color": "black  and white",
+    "bornOnDate": "Nov 1, 2021, 12:00:00 AM",
+    "ageInYears": 0,
+    "molting": false
+  },
+  {
+    "id": 4,
+    "name": "Charlana",
+    "color": "brown and black",
+    "bornOnDate": "Feb 1, 2026, 12:00:00 AM",
+    "ageInYears": 0,
+    "molting": false
+  }
+]

@@ -1,0 +1,7 @@
+id,name,color,bornOnDate,ageInYears,molting
+3,pedro,black,Sat Nov 21 00:00:00 GMT-05:00 2020,0,true
+1,harold,brown,Sat Nov 21 00:00:00 GMT-05:00 2020,0,false
+2,pepe,black,Thu Nov 14 00:00:00 GMT-05:00 2019,0,true
+3,santiago,black  and white,Mon Nov 01 00:00:00 GMT-05:00 2021,0,false
+4,Charlana,brown and black,Sun Feb 01 00:00:00 GMT-05:00 2026,0,false
+5,Richard,brown,Sat Feb 01 00:00:00 GMT-05:00 2025,0,false

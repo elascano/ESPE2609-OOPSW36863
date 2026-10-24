@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Claudio",
+        "color": "light brown",
+        "bornOnDate": "2020-05-12",
+        "ageInYears": 6,
+        "molting": true
+    },
+    {
+        "id": 2,
+        "name": "Lucy",
+        "color": "brown and white",
+        "bornOnDate": "2021-08-19",
+        "ageInYears": 5,
+        "molting": false
+    },
+    {
+        "id": 3,
+        "name": "Pepita",
+        "color": "black",
+        "bornOnDate": "2022-01-10",
+        "ageInYears": 4,
+        "molting": true
+    },
+    {
+        "id": 4,
+        "name": "Marujita",
+        "color": "black",
+        "bornOnDate": "2022-03-15",
+        "ageInYears": 4,
+        "molting": false
+    },
+    {
+        "id": 5,
+        "name": "Cocotte",
+        "color": "white",
+        "bornOnDate": "2023-02-01",
+        "ageInYears": 3,
+        "molting": false
+    },
+    {
+        "id": 6,
+        "name": "Ginger",
+        "color": "reddish brown",
+        "bornOnDate": "2023-06-20",
+        "ageInYears": 3,
+        "molting": true
+    },
+    {
+        "id": 7,
+        "name": "Rocky",
+        "color": "speckled grey",
+        "bornOnDate": "2021-11-05",
+        "ageInYears": 4,
+        "molting": false
+    },
+    {
+        "id": 8,
+        "name": "Henrietta",
+        "color": "golden brown",
+        "bornOnDate": "2024-04-10",
+        "ageInYears": 2,
+        "molting": false
+    },
+    {
+        "id": 9,
+        "name": "Penny",
+        "color": "white",
+        "bornOnDate": "2024-07-22",
+        "ageInYears": 2,
+        "molting": true
+    },
+    {
+        "id": 10,
+        "name": "Bella",
+        "color": "dark brown",
+        "bornOnDate": "2025-01-15",
+        "ageInYears": 1,
+        "molting": false
+    }
+]

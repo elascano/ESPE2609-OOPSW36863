@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Demian",
+    "color": "Black",
+    "bornOnDate": "2024-02-24",
+    "molting": true
+  },
+  {
+    "id": 2,
+    "name": "Alex",
+    "color": "red",
+    "bornOnDate": "2022-06-26",
+    "molting": true
+  }
+]
