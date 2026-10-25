@@ -1,0 +1,98 @@
+const Chicken = require("./Chicken");
+const { ask, readInt, readYesNo, readDate } = require("./helpers");
+
+const MAX_CHICKENS = 10;
+
+class ChickenCoop {
+  constructor(id) {
+    this.id = id;
+    this.chickens = [];
+    this.currentIndex = 0;
+  }
+
+  existsId(chickenId) {
+    for (const chicken of this.chickens) {
+      if (chicken.id === chickenId) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  add(chicken) {
+    if (this.existsId(chicken.id)) {
+      console.log(`The id ${chicken.id} is already registered, the chicken was not added`);
+      return;
+    }
+    if (this.chickens.length >= MAX_CHICKENS) {
+      console.log("The coop is full, we can't add more chickens");
+      return;
+    }
+    this.chickens.push(chicken);
+    console.log("Chicken added -->", chicken.name);
+  }
+
+  // asks the data of the chickens with the keyboard
+  async registerChickens() {
+    let keepGoing = true;
+    while (keepGoing) {
+      if (this.chickens.length >= MAX_CHICKENS) {
+        console.log("The coop is full, we can't add more chickens");
+        return;
+      }
+
+      console.log("Register a new chicken");
+      let id = await readInt("Enter the id: ");
+      while (this.existsId(id)) {
+        console.log(`The id ${id} is already registered, try another one`);
+        id = await readInt("Enter the id: ");
+      }
+
+      const name = await ask("Enter the name: ");
+      const color = await ask("Enter the color: ");
+      const bornOnDate = await readDate("Enter the birth date");
+      const molting = await readYesNo("Is it molting? (y/n): ");
+
+      this.add(new Chicken(id, name, color, bornOnDate, molting));
+      keepGoing = await readYesNo("Want to add another chicken? (y/n): ");
+    }
+  }
+
+  remove(chickenId) {
+    for (let position = 0; position < this.chickens.length; position++) {
+      if (this.chickens[position].id === chickenId) {
+        this.chickens.splice(position, 1);
+        if (position < this.currentIndex) {
+          this.currentIndex--;
+        }
+        console.log(`Chicken with id ${chickenId} was removed`);
+        return;
+      }
+    }
+    console.log(`There is no chicken with id ${chickenId}`);
+  }
+
+  resetIteration() {
+    this.currentIndex = 0;
+  }
+
+  // returns the chicken of the current position and moves forward
+  next() {
+    if (this.currentIndex >= this.chickens.length) {
+      return null;
+    }
+    const chicken = this.chickens[this.currentIndex];
+    this.currentIndex++;
+    return chicken;
+  }
+
+  toString() {
+    let text = `ChickenCoop(id=${this.id}, chickens=\n`;
+    for (const chicken of this.chickens) {
+      text += "\t" + chicken + "\n";
+    }
+    return text + ")";
+  }
+}
+
+module.exports = ChickenCoop;

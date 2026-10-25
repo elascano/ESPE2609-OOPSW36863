@@ -1,0 +1,26 @@
+[
+    {
+        "id": 234,
+        "name": "24",
+        "color": "23",
+        "bornOnDate": "2026-10-22",
+        "age": 0,
+        "molting": false
+    },
+    {
+        "id": 4,
+        "name": "2",
+        "color": "42",
+        "bornOnDate": "2026-10-22",
+        "age": 0,
+        "molting": false
+    },
+    {
+        "id": 2,
+        "name": "4",
+        "color": "2",
+        "bornOnDate": "2026-10-22",
+        "age": 0,
+        "molting": false
+    }
+]

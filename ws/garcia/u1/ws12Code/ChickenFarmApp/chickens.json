@@ -1,0 +1,82 @@
+[
+  {
+    "id": 3,
+    "name": "Pepita",
+    "color": "Black",
+    "bornOnDate": "Mar 2, 3920, 12:00:00 AM",
+    "ageInYears": 6,
+    "molting": true
+  },
+  {
+    "id": 1,
+    "name": "Lucy",
+    "color": "brown and white",
+    "bornOnDate": "Oct 21, 2026, 9:23:31 PM",
+    "ageInYears": 0,
+    "molting": true
+  },
+  {
+    "id": 4,
+    "name": "chicken 4",
+    "color": "white",
+    "bornOnDate": "Apr 3, 3922, 12:00:00 AM",
+    "ageInYears": 4,
+    "molting": true
+  },
+  {
+    "id": 5,
+    "name": "chicken 5",
+    "color": "white",
+    "bornOnDate": "Apr 3, 3922, 12:00:00 AM",
+    "ageInYears": 4,
+    "molting": true
+  },
+  {
+    "id": 6,
+    "name": "chicken 6",
+    "color": "white",
+    "bornOnDate": "Apr 3, 3922, 12:00:00 AM",
+    "ageInYears": 4,
+    "molting": true
+  },
+  {
+    "id": 7,
+    "name": "chicken 7",
+    "color": "white",
+    "bornOnDate": "Apr 3, 3922, 12:00:00 AM",
+    "ageInYears": 4,
+    "molting": true
+  },
+  {
+    "id": 8,
+    "name": "chicken 8",
+    "color": "white",
+    "bornOnDate": "Apr 3, 3922, 12:00:00 AM",
+    "ageInYears": 4,
+    "molting": true
+  },
+  {
+    "id": 9,
+    "name": "chicken 9",
+    "color": "white",
+    "bornOnDate": "Apr 3, 3922, 12:00:00 AM",
+    "ageInYears": 4,
+    "molting": true
+  },
+  {
+    "id": 10,
+    "name": "chicken 10",
+    "color": "white",
+    "bornOnDate": "Apr 3, 3922, 12:00:00 AM",
+    "ageInYears": 4,
+    "molting": true
+  },
+  {
+    "id": 5,
+    "name": "lol",
+    "color": "white",
+    "bornOnDate": "Jan 1, 2026, 12:00:00 AM",
+    "ageInYears": 0,
+    "molting": false
+  }
+]

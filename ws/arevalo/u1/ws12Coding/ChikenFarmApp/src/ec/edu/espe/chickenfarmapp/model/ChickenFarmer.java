@@ -6,4 +6,7 @@ package ec.edu.espe.chickenfarmapp.model;
  */
 public class ChickenFarmer {
     
+
+
+    
 }

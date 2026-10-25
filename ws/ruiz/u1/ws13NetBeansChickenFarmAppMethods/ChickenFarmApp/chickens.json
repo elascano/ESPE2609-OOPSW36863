@@ -1,0 +1,12 @@
+[
+  {"id": 1, "name": "Tony", "color": "white", "bornOnDate": "2024/11/24", "molting": true},
+  {"id": 2, "name": "Clara", "color": "white", "bornOnDate": "2023/07/12", "molting": false},
+  {"id": 3, "name": "Coco", "color": "black", "bornOnDate": "2022/12/25", "molting": false},
+  {"id": 4, "name": "Sofi", "color": "brown", "bornOnDate": "2025/01/11", "molting": true},
+  {"id": 5, "name": "Samantha", "color": "brown and white", "bornOnDate": "2021/07/18", "molting": true},
+  {"id": 6, "name": "Claudia", "color": "yellow", "bornOnDate": "2026/04/05", "molting": false},
+  {"id": 7, "name": "Juan", "color": "black", "bornOnDate": "2020/11/15", "molting": true},
+  {"id": 8, "name": "Pablo", "color": "gray and white", "bornOnDate": "2024/05/15", "molting": true},
+  {"id": 9, "name": "Pepe", "color": "brown", "bornOnDate": "2023/01/17", "molting": false},
+  {"id": 10, "name": "Daniela", "color": "white", "bornOnDate": "2021/01/28", "molting": true}
+]
