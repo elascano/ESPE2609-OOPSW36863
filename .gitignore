@@ -64,3 +64,5 @@ replay_pid*
 **/build/
 **/dist/
 >>>>>>> 618c506548e09816234ca053e0b0e5281c151033
+/ws/olalla/u1/ws16UnitTesting/BasciOperations/target/
+/ws/olalla/u1/ws16UnitTesting/NetSalaryOperation/target/
