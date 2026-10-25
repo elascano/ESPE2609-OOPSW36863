@@ -28,4 +28,9 @@ replay_pid*
 **/nbproject/
 **/build/
 **/dist/
+<<<<<<< Updated upstream
 **/target/
+=======
+>>>>>>> 618c506548e09816234ca053e0b0e5281c151033
+/ws/olivo/u1/ws16UnitTesting/BasicOperation/target/
+>>>>>>> Stashed changes
