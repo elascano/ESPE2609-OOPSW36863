@@ -170,5 +170,5 @@ public class ChickenFarmApp {
         }
         scanner.close();
     }
-    1
+    
 }
