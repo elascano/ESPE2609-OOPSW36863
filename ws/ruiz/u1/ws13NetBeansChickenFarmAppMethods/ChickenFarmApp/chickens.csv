@@ -1,0 +1,11 @@
+id;name;color;bornOnDate;molting
+1;Tony;white;24/11/2024;true
+2;Clara;white;12/7/2023;false
+3;Coco;black;25/12/2022;false
+4;Sofi;brown;11/1/2025;true
+5;Samantha;brown and white; 2021/07/18;true
+6;Claudia;yellow;5/4/2026;false
+7;Juan;black;15/11/2020;true
+8;Pablo;gray and white;15/5/2024;true
+9;Pepe;brown;17/1/2023;false
+10;Daniela;white;28/1/2021;true

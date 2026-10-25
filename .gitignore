@@ -57,6 +57,7 @@ replay_pid*
 /ws/garcia/u1/ws12Code/ChickenFarmApp/dist/
 >>>>>>> Stashed changes
 >>>>>>> 98dd26f (Update ChickenFarmApp implementation and model classes)
+<<<<<<< Updated upstream
 >>>>>>> 129da4eba9b2d4959fcd2c80663fdd48a44224fb
 >>>>>>> 97834afa5a36369285a1fad4e6e50a5cb2cab5a9
 =======
@@ -65,3 +66,10 @@ replay_pid*
 **/dist/
 >>>>>>> 618c506548e09816234ca053e0b0e5281c151033
 /ws/cumbajin/U1/ws16/BasicOperations/target/
+=======
+/ws/ruiz/u1/ws15CollectionsExample/CollectionsExample/nbproject/private/
+/ws/ruiz/u1/ws15CollectionsExample/CollectionsExample/build/
+/ws/ruiz/u1/ws16LibsAndUnitTests/BasicOperations/nbproject/private/
+/ws/ruiz/u1/ws16LibsAndUnitTests/BasicOperations/BasicOperation/target/
+/ws/ruiz/u1/ws16LibsAndUnitTests/BasicOperations/BasicOperation/nbproject/
+>>>>>>> Stashed changes
