@@ -1,0 +1,69 @@
+-------------------------------------------------------------------------------
+Test set: unitTest.OperationTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.319 s <<< FAILURE! -- in unitTest.OperationTest
+unitTest.OperationTest.testNetSalaryNegativeGrossPay -- Time elapsed: 0.091 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: positive delta expected but was: <-1.0>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.AssertionUtils.failIllegalDelta(AssertionUtils.java:114)
+	at org.junit.jupiter.api.AssertionUtils.assertValidDelta(AssertionUtils.java:83)
+	at org.junit.jupiter.api.AssertionUtils.floatsAreEqual(AssertionUtils.java:77)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:117)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at unitTest.OperationTest.testNetSalaryNegativeGrossPay(OperationTest.java:88)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+unitTest.OperationTest.testNetSalaryWrongIessContribution -- Time elapsed: 0.015 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <2862.0> but was: <3202.2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at unitTest.OperationTest.testNetSalaryWrongIessContribution(OperationTest.java:165)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+unitTest.OperationTest.testNetSalaryDecimals -- Time elapsed: 0.011 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <1758.04> but was: <1758.0398>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at unitTest.OperationTest.testNetSalaryDecimals(OperationTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+unitTest.OperationTest.testNetSalaryNegativeTaxes -- Time elapsed: 0.015 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at unitTest.OperationTest.testNetSalaryNegativeTaxes(OperationTest.java:151)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+unitTest.OperationTest.testNetSalaryNegativeResult -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: positive delta expected but was: <-1.0>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.AssertionUtils.failIllegalDelta(AssertionUtils.java:114)
+	at org.junit.jupiter.api.AssertionUtils.assertValidDelta(AssertionUtils.java:83)
+	at org.junit.jupiter.api.AssertionUtils.floatsAreEqual(AssertionUtils.java:77)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:117)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at unitTest.OperationTest.testNetSalaryNegativeResult(OperationTest.java:101)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

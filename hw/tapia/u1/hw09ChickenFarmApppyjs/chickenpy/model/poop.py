@@ -1,0 +1,15 @@
+class Poop:
+
+    def __init__(self, id, color, consistency):
+        self.id = id
+        self.color = color
+        self.consistency = consistency
+
+    def __str__(self):
+        return (
+            f"Poop{{"
+            f"id={self.id}, "
+            f"color='{self.color}', "
+            f"consistency={self.consistency}"
+            f"}}"
+        )
