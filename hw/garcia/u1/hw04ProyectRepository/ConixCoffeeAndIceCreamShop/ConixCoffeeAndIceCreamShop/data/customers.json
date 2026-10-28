@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Carlos Perez",
+    "phone": "0991234567",
+    "email": "carlos.perez@gmail.com"
+  },
+  {
+    "name": "Maria Lopez",
+    "phone": "0982345678",
+    "email": "maria.lopez@gmail.com"
+  },
+  {
+    "name": "Andres Gomez",
+    "phone": "0973456789",
+    "email": "andres.gomez@gmail.com"
+  },
+  {
+    "name": "Sofia Torres",
+    "phone": "0964567890",
+    "email": "sofia.torres@gmail.com"
+  },
+  {
+    "name": "Daniel Ramirez",
+    "phone": "0955678901",
+    "email": "daniel.ramirez@gmail.com"
+  },
+  {
+    "name": "Valentina Castro",
+    "phone": "0946789012",
+    "email": "valentina.castro@gmail.com"
+  },
+  {
+    "name": "Mateo Flores",
+    "phone": "0937890123",
+    "email": "mateo.flores@gmail.com"
+  },
+  {
+    "name": "Camila Herrera",
+    "phone": "0928901234",
+    "email": "camila.herrera@gmail.com"
+  },
+  {
+    "name": "Sebastian Morales",
+    "phone": "0919012345",
+    "email": "sebastian.morales@gmail.com"
+  },
+  {
+    "name": "Isabella Ruiz",
+    "phone": "0990123456",
+    "email": "isabella.ruiz@gmail.com"
+  }
+]
