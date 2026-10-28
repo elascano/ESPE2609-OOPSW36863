@@ -1,0 +1,14 @@
+[
+  {
+    "valid": true,
+    "discountPercentage": 10.0
+  },
+  {
+    "valid": true,
+    "discountPercentage": 23.0
+  },
+  {
+    "valid": true,
+    "discountPercentage": 3.0
+  }
+]
