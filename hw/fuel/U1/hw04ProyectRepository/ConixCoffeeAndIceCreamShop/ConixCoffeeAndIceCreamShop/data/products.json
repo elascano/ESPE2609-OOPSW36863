@@ -1,0 +1,87 @@
+[
+  {
+    "type": "PRODUCT",
+    "id": 1,
+    "name": "Coffee",
+    "sellingPrice": 2.5,
+    "cost": 1.0
+  },
+  {
+    "type": "PRODUCT",
+    "id": 2,
+    "name": "Chocolate Cake",
+    "sellingPrice": 3.5,
+    "cost": 1.5
+  },
+  {
+    "type": "PRODUCT",
+    "id": 3,
+    "name": "Croissant",
+    "sellingPrice": 1.75,
+    "cost": 0.7
+  },
+  {
+    "type": "PRODUCT",
+    "id": 4,
+    "name": "Cheesecake",
+    "sellingPrice": 4.0,
+    "cost": 1.8
+  },
+  {
+    "type": "ICECREAM",
+    "id": 5,
+    "name": "Chocolate Ice Cream",
+    "sellingPrice": 3.0,
+    "cost": 1.2,
+    "portion": 2,
+    "extrasCost": 0.5,
+    "flavour": "Chocolate"
+  },
+  {
+    "type": "ICECREAM",
+    "id": 6,
+    "name": "Vanilla Ice Cream",
+    "sellingPrice": 2.5,
+    "cost": 1.0,
+    "portion": 1,
+    "extrasCost": 0.25,
+    "flavour": "Vanilla"
+  },
+  {
+    "type": "ICECREAM",
+    "id": 7,
+    "name": "Strawberry Ice Cream",
+    "sellingPrice": 3.25,
+    "cost": 1.3,
+    "portion": 2,
+    "extrasCost": 0.4,
+    "flavour": "Strawberry"
+  },
+  {
+    "type": "BEVERAGE",
+    "id": 8,
+    "name": "Iced Latte",
+    "sellingPrice": 3.5,
+    "cost": 1.4,
+    "size": "M",
+    "temperature": false
+  },
+  {
+    "type": "BEVERAGE",
+    "id": 9,
+    "name": "Hot Chocolate",
+    "sellingPrice": 3.0,
+    "cost": 1.1,
+    "size": "L",
+    "temperature": true
+  },
+  {
+    "type": "BEVERAGE",
+    "id": 10,
+    "name": "Orange Juice",
+    "sellingPrice": 2.75,
+    "cost": 1.0,
+    "size": "M",
+    "temperature": false
+  }
+]
