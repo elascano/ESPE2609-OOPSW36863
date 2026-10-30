@@ -1,81 +1,73 @@
-
 package ec.edu.espe.chickenfarm.model;
 
-import java.util.Date;
+import java.util.Arrays;
 
 /**
- *
  * @author Stalyn Guerrero, CodeX3Team, @ESPE
  */
 public class ChickenCoop {
     private int chickenCoopId;
-    private Chicken chikens[] = new Chicken[10];
+    private Chicken chickens[];
     private int currentIndex;
-    
-    //we need to know the maximum in this case is 10
-    //we need to know the index
-    //En la primera agregar chickens, remover chickens por Id, 
-    
-    public void add(Chicken chicken){
-        
-        //if we have less then 10 chickens, we can add one more
-        //else we can not add any more
-        
-    
+
+    public ChickenCoop(int chickenCoopId, Chicken[] chickens) {
+        this.chickenCoopId = chickenCoopId;
+        this.chickens = chickens;
+        this.currentIndex = 0;
     }
-    
-    public remove (int chickendId){
+
+    public void add(Chicken chicken) {
+        if (currentIndex < chickens.length) {
+            chickens[currentIndex] = chicken;
+            currentIndex++;
+            System.out.println("Chicken added successfully to coop " + chickenCoopId);
+        } else {
+            System.out.println("Can not add chicken. The coop is full");
+        }
+    }
+
+    // Método remove que faltaba y que usas en el main
+    public void remove(int chickenId) {
+        for (int i = 0; i < chickens.length; i++) {
+            if (chickens[i] != null && chickens[i].getId() == chickenId) {
+                chickens[i] = null;
+                System.out.println("Chicken with ID " + chickenId + " removed from coop.");
+                break;
+            }
+        }
+    }
+
+    public void resetIteration() {
         currentIndex = 0;
     }
-    
-    public void resetIteration(){
-    
-    }
-    
-    public Chicken next(){
-    
-        return new Chicken(3, "Lucy", "white", new Date(2020, 3,3), true);
-    }
-    
-    public ChickenCoop(int chickenCoopId, Chicken[] chikens) {
-        this.chickenCoopId = chickenCoopId;
-        this.chikens = chikens;
+
+    public Chicken next() {
+        if (currentIndex < chickens.length) {
+            Chicken chicken = chickens[currentIndex];
+            currentIndex++;
+            return chicken;
+        }
+        return null;
     }
 
     @Override
     public String toString() {
-        return "ChickenCoop{" + "chickenCoopId=" + chickenCoopId + ", chikens=" + chikens + '}';
+        return "ChickenCoop{chickenCoopId=" + chickenCoopId + ", chickens=" + Arrays.toString(chickens) + "}";
     }
 
-    
-    
-    
-    /**
-     * @return the chickenCoopId
-     */
     public int getChickenCoopId() {
         return chickenCoopId;
     }
 
-    /**
-     * @param chickenCoopId the chickenCoopId to set
-     */
     public void setChickenCoopId(int chickenCoopId) {
         this.chickenCoopId = chickenCoopId;
     }
 
-    /**
-     * @return the chikens
-     */
-    public Chicken[] getChikens() {
-        return chikens;
+    public Chicken[] getChickens() {
+        return chickens;
     }
 
-    /**
-     * @param chikens the chikens to set
-     */
-    public void setChikens(Chicken[] chikens) {
-        this.chikens = chikens;
+    public void setChickens(Chicken[] chickens) {
+        this.chickens = chickens;
     }
-    
 }
