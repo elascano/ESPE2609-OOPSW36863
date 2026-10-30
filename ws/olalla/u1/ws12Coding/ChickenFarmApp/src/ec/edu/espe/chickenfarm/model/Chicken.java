@@ -88,7 +88,7 @@ public class Chicken {
     
     @Override
     public String toString() {
-        return "Chicken{" + "id=" + getId() + ", name=" + getName() + ", color=" + getColor() + ", bornOnDate=" + getBornOnDate() + ", age=" + getAgeInYears() + ", molting=" + isMolting() + '}';
+        return "Chicken{" + "id=" + getId() + ", name=" + getName() + ", color=" + getColor() + ", age=" + getAgeInYears() + ", molting=" + isMolting() + '}';
     }
     
     /**

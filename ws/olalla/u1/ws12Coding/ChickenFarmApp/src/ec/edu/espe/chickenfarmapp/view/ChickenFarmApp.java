@@ -2,6 +2,7 @@ package ec.edu.espe.chickenfarmapp.view;
 
 import ec.edu.espe.chickenfarm.model.Chicken;
 import ec.edu.espe.chickenfarm.model.ChickenCoop;
+import ec.edu.espe.chickenfarm.model.ChickenFarmer;
 import ec.edu.espe.chickenfarm.model.Egg;
 import ec.edu.espe.chickenfarm.model.Poop;
 import java.util.Date;
@@ -21,8 +22,9 @@ public class ChickenFarmApp {
         Poop poop;
         ChickenCoop coop;
         Chicken[] chickens = new Chicken[10];
+        ChickenFarmer chickenFarmer;
         
-        chicken = new Chicken(2, "Lucy", "brown and white", new Date(1970, 7, 15), true); //instiation
+        chicken = new Chicken(2, "Maruja", "brown and white", new Date(1970, 7, 15), true); //instiation
         chicken.setAgeInYears();
         egg= new Egg(1, 'M');        
         
@@ -50,8 +52,7 @@ public class ChickenFarmApp {
         for (int i = 0; i < 10; i++) {
             System.out.println("chickens --> " + chickens[i]);
         }
-        
-        @SuppressWarnings("UnusedAssignment")
+                
         int ageForTheLoop=0;
         for (int i = 0; i < chickens.length; i++) {
             ageForTheLoop = 2010 + i;
@@ -62,6 +63,50 @@ public class ChickenFarmApp {
         for (int i= 0; i < 10; i++){
             System.out.println("chikens --> " + chickens[i]);
         }
+                       
+        System.out.println("Chicken Coop");
+        System.out.println("=================================");
+                
+        coop = new ChickenCoop(1, new Chicken[10]);
+                
+        coop.add(chicken);
+        coop.add(chicken1);
+        coop.add(new Chicken(3, "Pepita", "black", new Date(120,2,2), true));
+                
+        for (int i = 4; i <= 12; i++) {
+            coop.add(new Chicken(i, "chicken" + i, "white", new Date(2015,3,3), true));
+        }
+                
+        System.out.println("Chickens in the coop:");
+        Chicken current = coop.next();
+        while (current != null) {
+            System.out.println(current);
+            current = coop.next();
+        }
+                
+        coop.resetIteration();
+        System.out.println("First chicken after reset --> " + coop.next());
         
-    }
-}
+        // 4. ask the user which chicken to remove
+        coop.remove();
+                
+        coop.resetIteration();
+        System.out.println("Chickens in the coop after removing:");
+        current = coop.next();
+        while (current != null) {
+            System.out.println(current);
+            current = coop.next();
+        }
+        
+        System.out.println("==========");
+        System.out.println("2026 10 21");
+        chickenFarmer = new ChickenFarmer();
+        
+        System.out.println("chicken Farmer --> " + chickenFarmer);
+        
+        
+        //TODO CREAR ARREGLOS ARCHIVO DE POLLITOS Y LEERLOS DESDE EL ARCHIVO
+        //TODO GUARDAR LOS POLLOS EN JSON Y CSV 
+        //TODOJSON --> GUARDAR ARCHIVO --> LEER EL ARCHIVO
+    }      
+} 

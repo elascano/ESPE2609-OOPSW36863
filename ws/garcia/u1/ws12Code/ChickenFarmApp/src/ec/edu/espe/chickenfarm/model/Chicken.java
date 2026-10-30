@@ -47,21 +47,36 @@ public final class Chicken {
         return egg;
     }
     
-    public int computeAgeInYears(){
+    public int computeAgeInYears() {
+        if (this.bornOnDate == null) {
+            this.ageInYears = 0;
+            return 0;
+        }
+
         Calendar birth = Calendar.getInstance();
         birth.setTime(this.bornOnDate);
 
-        Calendar today = Calendar.getInstance();
+        int birthYear = birth.get(Calendar.YEAR);
 
-        int age = today.get(Calendar.YEAR) - birth.get(Calendar.YEAR);
+        if (birthYear >= 3800) { 
+            birthYear -= 1900;
+        }
+
+        Calendar today = Calendar.getInstance();
+        int age = today.get(Calendar.YEAR) - birthYear;
 
         if (today.get(Calendar.DAY_OF_YEAR) < birth.get(Calendar.DAY_OF_YEAR)) {
-        age--;
-    }
-        this.ageInYears = age;
+            age--;
+        }
 
-        return age+1900;
+        if (age < 0) {
+            age = 0;
+        }
+
+        this.ageInYears = age;
+        return age;
     }
+    
     public Chicken() {
     }
 
