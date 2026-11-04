@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.basicoperation.model.ParalleleppipedTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 4, Errors: 1, Skipped: 0, Time elapsed: 0.067 s <<< FAILURE! -- in ec.edu.espe.basicoperation.model.ParalleleppipedTest
+ec.edu.espe.basicoperation.model.ParalleleppipedTest.testComputeVolume -- Time elapsed: 0.021 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <43.6> but was: <43.616>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.basicoperation.model.ParalleleppipedTest.testComputeVolume(ParalleleppipedTest.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+ec.edu.espe.basicoperation.model.ParalleleppipedTest.testComputeVolume4 -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: 
+	at ec.edu.espe.basicoperation.model.Paralleleppiped.computeVolume(Paralleleppiped.java:12)
+	at ec.edu.espe.basicoperation.model.ParalleleppipedTest.testComputeVolume4(ParalleleppipedTest.java:82)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+ec.edu.espe.basicoperation.model.ParalleleppipedTest.testComputeVolume6 -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <68.04> but was: <68.03999>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.basicoperation.model.ParalleleppipedTest.testComputeVolume6(ParalleleppipedTest.java:107)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+ec.edu.espe.basicoperation.model.ParalleleppipedTest.testComputeVolume7 -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <486.6> but was: <7937.5923>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.basicoperation.model.ParalleleppipedTest.testComputeVolume7(ParalleleppipedTest.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+ec.edu.espe.basicoperation.model.ParalleleppipedTest.testComputeVolume8 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <132.192> but was: <132.19199>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.basicoperation.model.ParalleleppipedTest.testComputeVolume8(ParalleleppipedTest.java:131)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

@@ -1,0 +1,8 @@
+﻿Order id,Date,Customer,Items,Payment method,Status,Total
+1,2026-10-20 05:15,Ana Pérez,3,Tarjeta,Delivered,73.99
+2,2026-10-21 10:15,Luis Andrade,3,Efectivo,Delivered,81.00
+3,2026-10-22 04:15,Sofía Ramírez,6,Transferencia,Delivered,108.50
+4,2026-10-23 12:15,Diego Vélez,3,Tarjeta,Delivered,69.80
+5,2026-10-25 06:15,Ana Pérez,5,Efectivo,Confirmed,89.25
+6,2026-10-27 09:15,Sofía Ramírez,4,Tarjeta,Confirmed,104.50
+7,2026-10-30 07:48,Diego Vélez,1,Efectivo,Confirmed,18.50
