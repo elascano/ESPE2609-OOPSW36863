@@ -1,0 +1,10 @@
+class Inventory:
+    def __init__(self):
+        self.__vinylRecord = None
+
+    def addVinyl(self, vinyl: VinylRecord):
+        self.__vinylRecord = vinyl
+
+    def removeVinyl(self):
+        self.__vinylRecord = None
+                

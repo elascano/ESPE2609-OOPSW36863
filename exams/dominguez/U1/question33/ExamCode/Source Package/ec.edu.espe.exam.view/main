@@ -1,0 +1,28 @@
+
+def main():
+    JSON_FILE = "vinyl_data.json"
+    mi_inventario = Inventory()
+    
+    print("--- 1. READ FILE ---")
+    mi_inventario.load_from_json(JSON_FILE)
+    
+    print("\n--- 2. CREATE AND ADD NEW OBJECTS ---")
+    autor1 = Autor(101, "Elvis Presley")
+    disco1 = VinylRecord(1, "Jailhouse Rock", autor1, "Rock")
+    
+    autor2 = Autor(102, "Michael Jackson")
+    disco2 = VinylRecord(2, "Thriller", autor2, "Pop")
+    
+    mi_inventario.addVinyl(disco1)
+    mi_inventario.addVinyl(disco2)
+    print("Se agregaron 2 discos nuevos al ArrayList (Inventario).")
+    
+    print("\n--- 3. SAVE TO JSON ---")
+    mi_inventario.save_to_json(JSON_FILE)
+    
+    print("\n--- 4. ACTUAL DISCS IN MEMORY ---")
+    for record in mi_inventario.get_records():
+        print(f"Disco: {record.get_name()} | Autor: {record.get_autor().get_name()}")
+
+if __name__ == "__main__":
+    main()
