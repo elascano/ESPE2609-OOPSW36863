@@ -1,4 +1,4 @@
-import { Chicken } from "./Chicken";
+import { Chicken } from "../model/Chicken";
 export declare class ChickenCoop {
     private chickenCoopId;
     private chickens;

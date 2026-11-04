@@ -45,7 +45,7 @@ const InputHandler_1 = require("../model/InputHandler");
 console.log("Andy Tiban's Chicken Farm");
 console.log("=========================");
 let chickens = new Array(10).fill(null);
-// En TS el mes empieza en 0, así que el mes 4 de Java sigue siendo 4, pero no restamos 1900 al año[cite: 16]
+// En TS el mes empieza en 0, así que el mes 4 de Java sigue siendo 4, pero no restamos 1900 al año
 let chicken = new Chicken_1.Chicken(2, "Maruja", "white", new Date(2024, 4, 15), false);
 let egg = new Egg_1.Egg(1, 'M');
 chicken.setAgeInYears();
