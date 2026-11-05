@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "maru",
+        "color": "white",
+        "bornOnDate": "2025-10-02",
+        "ageInYears": 1,
+        "molting": true
+    },
+    {
+        "id": 1,
+        "name": "maru",
+        "color": "white",
+        "bornOnDate": "2025-10-11",
+        "ageInYears": 1,
+        "molting": true
+    },
+    {
+        "id": 2,
+        "name": "ron",
+        "color": "brown ",
+        "bornOnDate": "2026-10-11",
+        "ageInYears": 0,
+        "molting": false
+    }
+]

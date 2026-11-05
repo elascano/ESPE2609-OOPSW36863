@@ -1,0 +1,27 @@
+[
+  {
+    "username": "qwe",
+    "password": "qwe",
+    "clockedIn": true
+  },
+  {
+    "username": "carlos",
+    "password": "carlos123",
+    "clockedIn": false
+  },
+  {
+    "username": "maria",
+    "password": "maria123",
+    "clockedIn": true
+  },
+  {
+    "username": "andres",
+    "password": "andres123",
+    "clockedIn": false
+  },
+  {
+    "username": "sofia",
+    "password": "sofia123",
+    "clockedIn": true
+  }
+]

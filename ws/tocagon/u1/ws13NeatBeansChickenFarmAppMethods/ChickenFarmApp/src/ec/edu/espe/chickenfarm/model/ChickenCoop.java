@@ -1,12 +1,16 @@
 package ec.edu.espe.chickenfarm.model;
 
 import java.util.Date;
+import java.util.Scanner;
 
 /**
  *
  * @author Nohemi Tocagon, Uni Helper, @ESPE
  */
 public class ChickenCoop {
+
+    public ChickenCoop(int par, Chicken[] chickens1) {
+    }
     private int chickenCoopId;
     private Chicken chickens[]= new Chicken[10];
     private int currentIndex;
@@ -22,6 +26,27 @@ public class ChickenCoop {
             System.out.println("Maxium!!");
         }
     }
+    public void add(Scanner sc){
+        System.out.print("ID: ");
+        int id = Integer.parseInt(sc.nextLine());
+
+        System.out.print("Name: ");
+        String name = sc.nextLine();
+        
+        System.out.println("Color");
+        String color = sc.nextLine();
+        
+        System.out.print("Molting (true/false): ");
+        boolean molting = Boolean.parseBoolean(sc.nextLine());
+        
+        System.out.print("Born on (yyyy-MM-dd): ");
+        String bornOnDate = sc.nextLine();
+
+        Chicken c = new Chicken(id, name, color, new Date(), molting);
+        add(c);
+        System.out.println("Chicken added!");
+    }
+    
     
     public void remove(int chickenId){
         int index = -1;
@@ -42,12 +67,10 @@ public class ChickenCoop {
         currentIndex--;
     }
     
-    public Chicken next(){
+    public Chicken next(int position){
         //return new Chicken(3, "Lucy", "white", new Date(2020,3,3), true);
-        for(int i=0; i< chickens.length;i++){
-            if(chickens[i] != null){
-                return chickens[i];
-            }
+        if (position < currentIndex) {
+        return chickens[position];
         }
         return null;
     }
@@ -58,6 +81,12 @@ public class ChickenCoop {
     
     @Override
     public String toString() {
+            String localChickens;
+            localChickens="";
+            for (Chicken chicken: chickens){
+                localChickens += chicken;
+                localChickens +="\n\t";
+            }
         return "ChickenCoop{" + "chickenCoopId=" + chickenCoopId + ", chikens=" + chickens + '}';
     }
 

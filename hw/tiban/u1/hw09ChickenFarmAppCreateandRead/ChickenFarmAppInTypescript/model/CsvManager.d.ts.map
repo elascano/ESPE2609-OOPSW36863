@@ -1,0 +1,1 @@
+{"version":3,"file":"CsvManager.d.ts","sourceRoot":"","sources":["CsvManager.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC;AAEpC,qBAAa,UAAU;IACnB,OAAO,CAAC,MAAM,CAAC,QAAQ,CAAC,SAAS,CAAkB;IAEnD,OAAc,YAAY,CAAC,QAAQ,EAAE,CAAC,OAAO,GAAG,IAAI,CAAC,EAAE,GAAG,IAAI,CAmB7D;CACJ"}

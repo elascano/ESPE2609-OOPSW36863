@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Jose",
+        "coops": [
+            {
+                "id": 1,
+                "chickens": [
+                    {
+                        "id": 1,
+                        "name": "Lucy",
+                        "color": "White",
+                        "born_on_date": "2025-01-25",
+                        "molting": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Edi",
+                        "color": "black",
+                        "born_on_date": "2020-05-26",
+                        "molting": true
+                    }
+                ]
+            }
+        ]
+    }
+]

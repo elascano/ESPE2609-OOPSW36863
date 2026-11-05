@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "name": "jstest",
+        "color": "white",
+        "bornOnDate": "2002-02-01T05:00:00.000Z",
+        "molting": true
+    }
+]

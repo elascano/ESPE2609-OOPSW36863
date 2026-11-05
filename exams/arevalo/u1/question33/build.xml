@@ -1,0 +1,13 @@
+<project name="Sound Mixer" default="run" basedir=".">
+    <target name="run">
+        <exec executable="cmd" failonerror="true">
+            <arg value="/c"/>
+            <arg value="start"/>
+            <arg value="&quot;Sound Mixer&quot;"/>
+            <arg value="/wait"/>
+            <arg value="cmd"/>
+            <arg value="/c"/>
+            <arg value="ejecutar.cmd"/>
+        </exec>
+    </target>
+</project>

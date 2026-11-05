@@ -1,0 +1,13 @@
+[
+  {
+    "details": [
+      {
+        "productId": 2,
+        "quantity": 1,
+        "unitPrice": 3.0,
+        "discountPercentage": 0.0
+      }
+    ],
+    "discount": 0.0
+  }
+]

@@ -14,6 +14,10 @@ public class Chicken {
     private Date bornOnDate;
     private int ageInYears;
     private boolean molting;
+
+    Chicken(int id, String name, String color, String bornOnDate, boolean molting) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     public void doStuff(){
        cluck();
@@ -68,6 +72,24 @@ public class Chicken {
     }
     //encapsulate fields
     
+    //TO JSON AND CVS
+    public String toJson(){
+        return
+         "{"
+        + "\"id\":"+ id
+        + ", \"name\":\""+ name + "\""
+        + ", \"color\":\"" +color + "\""
+        + ", \"bornOnDate\":\"" + bornOnDate + "\""
+        + ", \"ageInYears\":\"" + ageInYears + "\""
+        + ", \"molting\":\"" + molting + "\""
+        + "}";
+    }
+    
+    public String toCVS(){
+        return id + "," + name + ","+ color +","+ bornOnDate + "," + ageInYears + ","+ molting;
+    }
+    
+    
     // insert a constructor
     
     public Chicken(int id, String name, String color, Date bornOnDate, boolean molting) {
@@ -87,7 +109,7 @@ public class Chicken {
     }
 
     /**
-     * @return the id
+     * @return
      */
     public int getId() {
         return id;

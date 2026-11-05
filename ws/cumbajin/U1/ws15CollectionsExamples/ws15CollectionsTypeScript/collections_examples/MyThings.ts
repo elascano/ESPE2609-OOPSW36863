@@ -2,7 +2,6 @@
 import { Person } from "../model/Person";
 
 /**
- *
  * @author Dylan Cumbajin, MosQ, @ESPE
  */
 class MyThings {
