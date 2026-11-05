@@ -1,0 +1,39 @@
+{
+    "cables": [
+        {
+            "large": "5",
+            "typeConector": "c",
+            "type": "energy",
+            "id": 0
+        },
+        {
+            "large": "1",
+            "typeConector": "c",
+            "type": "data",
+            "id": 1
+        },
+        {
+            "large": "4",
+            "typeConector": "micro",
+            "type": "data",
+            "id": 2
+        }
+    ],
+    "devices": [
+        {
+            "type": "cellphone",
+            "typeConector": "micro",
+            "id": 0
+        },
+        {
+            "type": "computer",
+            "typeConector": "c",
+            "id": 1
+        },
+        {
+            "type": "tablet",
+            "typeConector": "micro",
+            "id": 2
+        }
+    ]
+}
