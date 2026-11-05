@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "strict": true,
+    "outDir": "dist",
+    "noEmitOnError": true
+  },
+  "include": ["Cellphone.ts", "CellphoneApp.ts"]
+}
