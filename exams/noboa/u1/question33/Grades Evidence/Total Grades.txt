@@ -1,0 +1,8 @@
+Grades
+
+Class Diagram: 6
+Code Structure: 2.5
+Clean code: 10
+add: 5
+
+Total: 23.5 pts
