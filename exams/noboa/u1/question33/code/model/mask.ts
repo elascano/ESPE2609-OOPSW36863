@@ -10,7 +10,6 @@ export class Mask {
         this._size = size;
         this._isWearing = isWearing;
     }
-
     
 
     get id(): number {
