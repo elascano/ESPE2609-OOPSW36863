@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.ConixCoffeeAndIcecreamShop.model.ShiftTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! -- in ec.edu.espe.ConixCoffeeAndIcecreamShop.model.ShiftTest
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.ShiftTest.testCreateShiftWithNullStartTime -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: La hora de entrada no puede ser nula.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Shift.setStartTime(Shift.java:33)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Shift.<init>(Shift.java:13)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.ShiftTest.testCreateShiftWithNullStartTime(ShiftTest.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.ShiftTest.testSetNullEndTime -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: La hora de salida no puede ser nula.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Shift.setEndTime(Shift.java:47)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.ShiftTest.testSetNullEndTime(ShiftTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

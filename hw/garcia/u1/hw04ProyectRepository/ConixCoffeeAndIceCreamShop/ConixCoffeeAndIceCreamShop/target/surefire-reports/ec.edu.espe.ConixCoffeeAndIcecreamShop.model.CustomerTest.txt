@@ -1,0 +1,55 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.138 s <<< FAILURE! -- in ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testSetNameWithNull -- Time elapsed: 0.053 s <<< ERROR!
+java.lang.IllegalArgumentException: El nombre del cliente no puede estar vacío.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Customer.setName(Customer.java:34)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testSetNameWithNull(CustomerTest.java:92)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testSetPhoneWithInvalidValue -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.IllegalArgumentException: El número de teléfono no tiene un formato válido.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Customer.setPhone(Customer.java:48)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testSetPhoneWithInvalidValue(CustomerTest.java:121)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testCustomerConstructorWithInvalidEmail -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.IllegalArgumentException: El correo electrónico no tiene un formato válido.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Customer.setEmail(Customer.java:63)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Customer.<init>(Customer.java:14)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testCustomerConstructorWithInvalidEmail(CustomerTest.java:41)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testCustomerConstructorWithInvalidPhone -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: El número de teléfono no tiene un formato válido.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Customer.setPhone(Customer.java:48)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Customer.<init>(Customer.java:13)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testCustomerConstructorWithInvalidPhone(CustomerTest.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testSetNameWithEmptyValue -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: El nombre del cliente no puede estar vacío.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Customer.setName(Customer.java:34)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testSetNameWithEmptyValue(CustomerTest.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testCustomerConstructorWithEmptyName -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: El nombre del cliente no puede estar vacío.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Customer.setName(Customer.java:34)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Customer.<init>(Customer.java:12)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.CustomerTest.testCustomerConstructorWithEmptyName(CustomerTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
