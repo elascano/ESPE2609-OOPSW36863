@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Jailhouse Rock",
+        "autor": {
+            "id": 101,
+            "name": "Elvis Presley"
+        },
+        "gender": "Rock"
+    },
+    {
+        "id": 2,
+        "name": "Thriller",
+        "autor": {
+            "id": 102,
+            "name": "Michael Jackson"
+        },
+        "gender": "Pop"
+    },
+    {
+        "id": 1,
+        "name": "Jailhouse Rock",
+        "autor": {
+            "id": 101,
+            "name": "Elvis Presley"
+        },
+        "gender": "Rock"
+    },
+    {
+        "id": 2,
+        "name": "Thriller",
+        "autor": {
+            "id": 102,
+            "name": "Michael Jackson"
+        },
+        "gender": "Pop"
+    }
+]
