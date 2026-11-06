@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.ConixCoffeeAndIcecreamShop.model.EmployeeTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.036 s <<< FAILURE! -- in ec.edu.espe.ConixCoffeeAndIcecreamShop.model.EmployeeTest
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.EmployeeTest.testSetEmployeeUsernameWithBlankValue -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: El nombre de usuario no puede estar vacío.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Employee.setUsername(Employee.java:39)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.EmployeeTest.testSetEmployeeUsernameWithBlankValue(EmployeeTest.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.EmployeeTest.testCreateEmployeeWithNullUsername -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.IllegalArgumentException: El nombre de usuario no puede estar vacío.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Employee.setUsername(Employee.java:39)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Employee.<init>(Employee.java:11)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.EmployeeTest.testCreateEmployeeWithNullUsername(EmployeeTest.java:46)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.EmployeeTest.testCreateEmployeeWithEmptyPassword -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: La contraseña no puede estar vacía.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Employee.setPassword(Employee.java:53)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Employee.<init>(Employee.java:12)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.EmployeeTest.testCreateEmployeeWithEmptyPassword(EmployeeTest.java:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

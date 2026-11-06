@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.637" tests="90" errors="0" skipped="0" failures="25">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Usuario\BookStore\06Code\BookStoreApp\target\test-classes;C:\Users\Usuario\BookStore\06Code\BookStoreApp\target\classes;C:\Users\Usuario\.m2\repository\com\google\code\gson\gson\2.15.0\gson-2.15.0.jar;C:\Users\Usuario\.m2\repository\com\google\errorprone\error_prone_annotations\2.50.0\error_prone_annotations-2.50.0.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Guayaquil"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25.0.4.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire2740752955357596236\surefirebooter-20261028025125967_3.jar C:\Users\Usuario\AppData\Local\Temp\surefire2740752955357596236 2026-10-28T02-51-25_630-jvmRun1 surefire-20261028025125967_1tmp surefire_0-20261028025125967_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="ec.edu.espe.bookstoreapp.controller.OperationsTest"/>
+    <property name="surefire.test.class.path" value="C:\Users\Usuario\BookStore\06Code\BookStoreApp\target\test-classes;C:\Users\Usuario\BookStore\06Code\BookStoreApp\target\classes;C:\Users\Usuario\.m2\repository\com\google\code\gson\gson\2.15.0\gson-2.15.0.jar;C:\Users\Usuario\.m2\repository\com\google\errorprone\error_prone_annotations\2.50.0\error_prone_annotations-2.50.0.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Usuario"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25.0.4.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Usuario\BookStore\06Code\BookStoreApp"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire2740752955357596236\surefirebooter-20261028025125967_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.4.1+1-LTS-5"/>
+    <property name="user.name" value="Usuario"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\Usuario\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Usuario\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.4.1"/>
+    <property name="user.dir" value="C:\Users\Usuario\BookStore\06Code\BookStoreApp"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25.0.4.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\MATLAB\R2025b\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps;C:\Users\Usuario\AppData\Local\Python\bin;C:\Users\Usuario\AppData\Roaming\npm;C:\Users\Usuario\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Usuario\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;C:\Program Files\netbeans\bin\;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.4.1+1-LTS-5"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="addJournalRejectsNullPublicationDate" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.067"/>
+  <testcase name="calculateProfitCurrentlyReturnsSameResultForMonthlyAndWeekly" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.012"/>
+  <testcase name="registerPaymentAcceptsExactAmountAndStoresPayment" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.026">
+    <failure message="expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:231)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.registerPaymentAcceptsExactAmountAndStoresPayment(OperationsTest.java:600)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="totalSalesByPeriodReturnsZeroForNullSalesList" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.013"/>
+  <testcase name="totalSalesByPeriodExcludesSalesBeforeStartDate" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.048">
+    <failure message="expected: &lt;10.0&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <10.0> but was: <0.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.totalSalesByPeriodExcludesSalesBeforeStartDate(OperationsTest.java:469)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="calculateProfitReturnsThirtyPercentOfBookSaleTotal" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.004">
+    <failure message="expected: &lt;31.0&gt; but was: &lt;30.000002&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <31.0> but was: <30.000002>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.calculateProfitReturnsThirtyPercentOfBookSaleTotal(OperationsTest.java:793)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="registerPaymentRejectsBlankPaymentMethod" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="generateSalesReportIncludesSaleEvenWhenDateIsOutsideArguments" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.005"/>
+  <testcase name="registerPaymentRejectsNullSale" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="addBookRejectsInvalidAuthorsAndNegativeValues" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.007"/>
+  <testcase name="addJournalRejectsNullName" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="addBookRejectsNullTitle" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.005"/>
+  <testcase name="addJournalRejectsNegativePrice" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.007"/>
+  <testcase name="addJournalRejectsNegativeStock" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="searchJournalByTitleReturnsEmptyWhenNoMatchExists" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="addJournalRejectsNullInventory" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="insufficientStockDoesNotBecomeNegative" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.004"/>
+  <testcase name="totalPurchasesByPeriodExcludesPurchasesBeforeStartDate" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.006"/>
+  <testcase name="computeTotalPurchaseCalculatesPurchaseDetails" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.004"/>
+  <testcase name="addJournalRejectsBlankName" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="searchBookByTitleIgnoresNullBooksAndNullTitles" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="totalPurchasesByPeriodSumsMultiplePurchases" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003">
+    <failure message="expected: &lt;71.0&gt; but was: &lt;70.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <71.0> but was: <70.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.totalPurchasesByPeriodSumsMultiplePurchases(OperationsTest.java:530)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="totalPurchasesByPeriodReturnsZeroForNullEndDate" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.004"/>
+  <testcase name="addBookSupportsMultipleAuthors" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="registerPaymentAcceptsOverpaymentForJournalSale" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="totalPurchasesByPeriodReturnsPurchaseWithinPeriod" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.004">
+    <failure message="expected: &lt;44.0&gt; but was: &lt;45.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <44.0> but was: <45.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.totalPurchasesByPeriodReturnsPurchaseWithinPeriod(OperationsTest.java:521)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="calculateProfitAcceptsNullPeriodTypeWithCurrentImplementation" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="searchBookByAuthorReturnsEmptyWhenAuthorDoesNotExist" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="totalSalesByPeriodReturnsZeroForNullEndDate" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="totalPurchasesByPeriodReturnsZeroForEmptyList" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003">
+    <failure message="expected: &lt;1.0&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1.0> but was: <0.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.totalPurchasesByPeriodReturnsZeroForEmptyList(OperationsTest.java:575)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="addBookRejectsNullInventory" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="totalPurchasesByPeriodIncludesBoundaryDates" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="generateSalesReportContainsBookTotal" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.generateSalesReportContainsBookTotal(OperationsTest.java:397)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="addJournalAddsJournalWithExpectedData" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003">
+    <failure message="expected: &lt;2&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.addJournalAddsJournalWithExpectedData(OperationsTest.java:172)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="generateSalesReportContainsCustomerName" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.generateSalesReportContainsCustomerName(OperationsTest.java:376)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="addJournalPreservesStateAndEditorial" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003">
+    <failure message="expected: &lt;Available&gt; but was: &lt;Discontinued&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Available> but was: <Discontinued>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.addJournalPreservesStateAndEditorial(OperationsTest.java:187)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="calculateProfitAcceptsWeeklyPeriodType" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="addBookRejectsEmptyAuthorList" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="registerPaymentRejectsInsufficientStockAtPaymentTime" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="registerPaymentRejectsSaleWithoutDetails" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="registerPaymentRejectsNullPaymentMethod" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="searchBookByTitleIgnoresCase" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002">
+    <failure message="expected: &lt;2&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.searchBookByTitleIgnoresCase(OperationsTest.java:286)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="registerPaymentRejectsAmountBelowTotal" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.004"/>
+  <testcase name="addJournalCanAddMoreThanOneJournal" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="addBookRejectsNullAuthorList" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="addBookAllowsZeroPriceAndStock" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002">
+    <failure message="expected: &lt;1.0&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1.0> but was: <0.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.addBookAllowsZeroPriceAndStock(OperationsTest.java:108)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="addBookToSaleRejectsQuantityAboveStock" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="calculateProfitWorksForMixedSaleDetails" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="failedPaymentDoesNotChangeBookStock" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="searchBookByTitleReturnsEmptyForNullArguments" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="sellingAllAvailableBookStockLeavesZero" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="totalSalesByPeriodReturnsZeroForNullStartDate" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="searchJournalByTitleFindsPartialTitleIgnoringCase" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="calculateProfitWorksForJournalItems" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="addBookRejectsBlankTitle" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="successfulMixedSaleUpdatesBookAndJournalStock" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002">
+    <failure message="expected: &lt;5&gt; but was: &lt;6&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <5> but was: <6>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.successfulMixedSaleUpdatesBookAndJournalStock(OperationsTest.java:715)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="totalPurchasesByPeriodReturnsZeroForNullPurchaseList" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="addBookAddsBookWithExpectedData" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002">
+    <failure message="expected: &lt;2&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.addBookAddsBookWithExpectedData(OperationsTest.java:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="totalPurchasesByPeriodExcludesPurchasesAfterEndDate" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="successfulJournalPaymentDecreasesStockBySoldQuantity" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.004">
+    <failure message="expected: &lt;6&gt; but was: &lt;5&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <6> but was: <5>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.successfulJournalPaymentDecreasesStockBySoldQuantity(OperationsTest.java:703)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="searchBookByTitleFindsExactTitle" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003">
+    <failure message="expected: &lt;2&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.searchBookByTitleFindsExactTitle(OperationsTest.java:268)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="generateSalesReportContainsSaleDate" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="generateSalesReportContainsSaleType" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="calculateProfitReflectsChangesToSaleTotal" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="totalPurchasesByPeriodReturnsZeroForNullStartDate" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="generateSalesReportShowsZeroForSaleWithoutDetails" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="totalSalesByPeriodReturnsZeroWhenEndIsBeforeStart" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="generateSalesReportSumsBookAndJournalDetails" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="addJournalAllowsZeroPriceAndStock" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003">
+    <failure message="expected: &lt;1.0&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1.0> but was: <0.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.addJournalAllowsZeroPriceAndStock(OperationsTest.java:210)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="addJournalToSaleRejectsNegativeQuantity" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="registerPaymentRejectsNullSalesList" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.registerPaymentRejectsNullSalesList(OperationsTest.java:649)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="totalSalesByPeriodSumsSalesWithinPeriod" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002">
+    <failure message="expected: &lt;21.0&gt; but was: &lt;20.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <21.0> but was: <20.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.totalSalesByPeriodSumsSalesWithinPeriod(OperationsTest.java:443)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="addBookTrimsTitleAndAuthorNames" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002">
+    <failure message="expected: &lt;Clean Code  &gt; but was: &lt;Clean Code&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Clean Code  > but was: <Clean Code>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.addBookTrimsTitleAndAuthorNames(OperationsTest.java:85)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="registerPaymentRejectsNegativeAmount" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.registerPaymentRejectsNegativeAmount(OperationsTest.java:642)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="searchJournalByTitleReturnsEmptyForNullArguments" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="searchBookByAuthorFindsAuthorIgnoringCase" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="addJournalToSaleAddsDetailWithoutChangingStockBeforePayment" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="calculateProfitReturnsZeroForSaleWithoutDetails" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="addBookToSaleRejectsZeroQuantity" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="calculateProfitAcceptsMonthlyPeriodType" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="generateSalesReportUsesFinalConsumerWhenCustomerIsNull" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002"/>
+  <testcase name="searchBookByTitleFindsPartialTitle" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003">
+    <failure message="expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.searchBookByTitleFindsPartialTitle(OperationsTest.java:278)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="successfulBookPaymentDecreasesStockBySoldQuantity" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.002">
+    <failure message="expected: &lt;6&gt; but was: &lt;5&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <6> but was: <5>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.successfulBookPaymentDecreasesStockBySoldQuantity(OperationsTest.java:693)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="calculateProfitUsesTotalOfMultipleBookItems" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="totalSalesByPeriodExcludesSalesAfterEndDate" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="totalSalesByPeriodIncludesStartAndEndDates" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003"/>
+  <testcase name="generateSalesReportContainsSaleId" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.generateSalesReportContainsSaleId(OperationsTest.java:360)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="totalSalesByPeriodIgnoresNullSaleEntries" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+  <testcase name="totalSalesByPeriodSumsMultipleSales" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.003">
+    <failure message="expected: &lt;34.0&gt; but was: &lt;35.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <34.0> but was: <35.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.bookstoreapp.controller.OperationsTest.totalSalesByPeriodSumsMultipleSales(OperationsTest.java:452)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="generateSalesReportContainsJournalTotal" classname="ec.edu.espe.bookstoreapp.controller.OperationsTest" time="0.001"/>
+</testsuite>

@@ -1,0 +1,7 @@
+Final Note
+
+Clean Code : 10 pts
+Structure Project: 2.5
+Class Diagram: 10 pts
+add: 5 pts
+Total Grade /30 : 27.5

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Iron Man",
+    "size": "M",
+    "isWearing": false
+  },
+  {
+    "id": 2,
+    "name": "Superman",
+    "size": "L",
+    "isWearing": false
+  }
+]

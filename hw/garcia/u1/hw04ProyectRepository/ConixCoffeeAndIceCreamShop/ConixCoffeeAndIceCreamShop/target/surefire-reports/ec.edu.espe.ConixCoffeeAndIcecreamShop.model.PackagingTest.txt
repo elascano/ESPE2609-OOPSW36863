@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PackagingTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.149 s <<< FAILURE! -- in ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PackagingTest
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PackagingTest.testSetUnitCostCase3 -- Time elapsed: 0.011 s <<< ERROR!
+java.lang.IllegalArgumentException: El costo unitario debe ser válido y no negativo.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Packaging.setUnitCost(Packaging.java:40)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PackagingTest.testSetUnitCostCase3(PackagingTest.java:123)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PackagingTest.testSetPackagingTypeCase3 -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: El tipo de empaque no puede estar vacío.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Packaging.setPackagingType(Packaging.java:26)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PackagingTest.testSetPackagingTypeCase3(PackagingTest.java:77)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PackagingTest.testSetQuantityCase3 -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: La cantidad no puede ser negativa.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Packaging.setQuantity(Packaging.java:54)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PackagingTest.testSetQuantityCase3(PackagingTest.java:167)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

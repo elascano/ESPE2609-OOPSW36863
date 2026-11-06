@@ -1,0 +1,5 @@
+The consol ejecution
+npm init -y
+npm install --save-dev typescript @types/node
+npx tsc Cellphone.ts CellphoneApp.ts --target ES2022 --module commonjs --outDir dist --strict
+node dist/CellphoneApp.js
