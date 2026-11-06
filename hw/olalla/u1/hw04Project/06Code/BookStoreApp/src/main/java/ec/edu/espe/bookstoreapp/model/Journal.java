@@ -1,0 +1,113 @@
+package ec.edu.espe.bookstoreapp.model;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.stream.Collectors;
+/**
+ *
+ * @author Nestor Olivo, 404 Founders, @ESPE
+ */
+public class Journal {
+    private static int idCurrent;
+    private int idJournal;
+    private String nameJournal;
+    private Editorial editorial;
+    private LocalDate yearOfPublication;
+    private float price;
+    private int stock;
+    private String state;
+    
+    
+    
+    public Journal(String nameJournal, Editorial editorial, LocalDate yearOfPublication, float price, int stock, String state) {
+        this.nameJournal = nameJournal;
+        this.editorial = editorial;
+        this.yearOfPublication = yearOfPublication;
+        this.price = price;
+        this.stock = stock;
+        this.state = state;
+        this.idJournal = idCurrent++;
+    }
+    
+    public boolean validateStock() {
+    return stock > 0;
+    }
+
+    public static int getIdCurrent() {
+        return idCurrent;
+    }
+
+    public static void setIdCurrent(int idCurrent) {
+        Journal.idCurrent = idCurrent;
+    }
+
+    public int getIdJournal() {
+        return idJournal;
+    }
+
+    public void setIdJournal(int idJournal) {
+        this.idJournal = idJournal;
+    }
+
+    public String getNameJournal() {
+        return nameJournal;
+    }
+
+    public void setNameJournal(String nameJournal) {
+        this.nameJournal = nameJournal;
+    }
+
+    public Editorial getEditorial() {
+        return editorial;
+    }
+
+    public void setEditorial(Editorial editorial) {
+        this.editorial = editorial;
+    }
+
+    public LocalDate getYearOfPublication() {
+        return yearOfPublication;
+    }
+
+    public void setYearOfPublication(LocalDate yearOfPublication) {
+        this.yearOfPublication = yearOfPublication;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }      
+
+    @Override
+    public String toString() {
+        return "Journal{" 
+                + "idJournal=" + idJournal 
+                + ", nameJournal=" + nameJournal 
+                + ", editorial=" + editorial 
+                + ", yearOfPublication=" + yearOfPublication 
+                + ", price=" + price 
+                + ", stock=" + stock 
+                + ", state=" + state 
+                + '}';
+    }
+    
+}
