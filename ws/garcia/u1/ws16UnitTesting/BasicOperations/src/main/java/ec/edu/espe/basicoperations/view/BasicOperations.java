@@ -1,27 +1,41 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+class Cathedral{
+	constructor (id, name, capacity){
+		this.id = id;
+		this.name = name;
+		this.capacity = capacity;
+	}
 
-package ec.edu.espe.basicoperations.view;
+	toString() {
+        return `Cathedral{id=${this.id}, name=${this.name}, capacity=${this.capacity}}`;
+    }
 
-import ec.edu.espe.basicoperations.model.Operation;
-
-/**
- *
- * @author Jesus Garcia, @ESPE
- */
-public class BasicOperations {
-
-    public static void main(String[] args) {
-        System.out.println("Operations!");
-        
-        Operation operation;
-        operation = new Operation();
-        System.out.println("The addition of 1.2 and 2.4 is --> " + operation.add(1.2F, 2.4F));
-        System.out.println("The addition of 1.2 and 2.4 is --> " + operation.add(1.2F, 2.4F));
-        System.out.println("The addition of 1.2 and 2.4 is --> " + operation.add(1.2F, 2.4F));
-
-        
-        System.out.println("Divide --> " + operation.divide(1,0));
+	getId() {
+        return this.id;
     }
 }
+
+function main() {
+    console.log("=============");
+    console.log("| Cathedrals |");
+    console.log("=============");
+
+    let things = [];
+    let cathedrals = new cathedrals(1, "La paz", 55);
+    cathedrals.push(Cathedral);
+
+    let cathedrals = [];
+    cathedrals.push(cathedrals);
+    cathedral2 = new Cathedral (2, "San Francisco", 230);
+    cathedrals.push(cathedral2);
+    persons.push(new Person(3, "Loma de Quito", 130));
+
+    cathedrals.forEach((c) => {
+        console.log("Cathedrals -->" + c.toString());
+    });
+
+    for (let i = 0; i < 10; i++) {
+        persons.push(new Person(i + 1, "Basilica " + (i + 1), (i + 1) * 1000));
+    }
+
+    const jsonTexto = JSON.stringify(cathedrals);
+main();
