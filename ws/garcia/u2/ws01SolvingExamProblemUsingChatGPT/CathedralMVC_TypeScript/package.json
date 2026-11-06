@@ -1,0 +1,17 @@
+{
+  "name": "cathedral-mvc-typescript",
+  "version": "1.0.0",
+  "description": "MVC TypeScript application to create, save and read Ecuadorian cathedral records from JSON.",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "dev": "ts-node src/main.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
