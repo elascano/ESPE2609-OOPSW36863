@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OwnerTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! -- in ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OwnerTest
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OwnerTest.testCreateOwnerWithBlankUsername -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: El nombre de usuario no puede estar vacío.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Owner.setUsername(Owner.java:29)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Owner.<init>(Owner.java:10)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OwnerTest.testCreateOwnerWithBlankUsername(OwnerTest.java:77)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OwnerTest.testCreateOwnerWithNullPassword -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: La contraseña no puede estar vacía.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Owner.setPassword(Owner.java:43)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Owner.<init>(Owner.java:11)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OwnerTest.testCreateOwnerWithNullPassword(OwnerTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OwnerTest.testSetOwnerUsernameWithNullValue -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: El nombre de usuario no puede estar vacío.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Owner.setUsername(Owner.java:29)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OwnerTest.testSetOwnerUsernameWithNullValue(OwnerTest.java:109)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
