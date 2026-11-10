@@ -1,0 +1,96 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest
+-------------------------------------------------------------------------------
+Tests run: 23, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.132 s <<< FAILURE! -- in ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testTaxConstructorWithNaNRate -- Time elapsed: 0.040 s <<< ERROR!
+java.lang.IllegalArgumentException: La tasa debe estar entre 0 y 100.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.setTaxRate(Tax.java:28)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.<init>(Tax.java:9)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testTaxConstructorWithNaNRate(TaxTest.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testTaxConstructorWithRateAboveMaximum -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: La tasa debe estar entre 0 y 100.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.setTaxRate(Tax.java:28)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.<init>(Tax.java:9)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testTaxConstructorWithRateAboveMaximum(TaxTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testSetTaxRateWithNaN -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: La tasa debe estar entre 0 y 100.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.setTaxRate(Tax.java:28)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testSetTaxRateWithNaN(TaxTest.java:185)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testTaxConstructorWithNegativeRate -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: La tasa debe estar entre 0 y 100.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.setTaxRate(Tax.java:28)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.<init>(Tax.java:9)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testTaxConstructorWithNegativeRate(TaxTest.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testSetTaxRateAboveMaximum -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: La tasa debe estar entre 0 y 100.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.setTaxRate(Tax.java:28)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testSetTaxRateAboveMaximum(TaxTest.java:178)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testTaxConstructorWithInfiniteRate -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: La tasa debe estar entre 0 y 100.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.setTaxRate(Tax.java:28)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.<init>(Tax.java:9)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testTaxConstructorWithInfiniteRate(TaxTest.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testCalculateTaxWithNaNAmount -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: El monto debe ser un número válido y no negativo.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.calculateTax(Tax.java:14)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testCalculateTaxWithNaNAmount(TaxTest.java:125)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testSetTaxRateWithInfiniteValue -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: La tasa debe estar entre 0 y 100.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.setTaxRate(Tax.java:28)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testSetTaxRateWithInfiniteValue(TaxTest.java:192)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testCalculateTaxWithNegativeAmount -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: El monto debe ser un número válido y no negativo.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.calculateTax(Tax.java:14)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testCalculateTaxWithNegativeAmount(TaxTest.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testSetTaxRateWithNegativeValue -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: La tasa debe estar entre 0 y 100.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.setTaxRate(Tax.java:28)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testSetTaxRateWithNegativeValue(TaxTest.java:171)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testCalculateTaxWithInfiniteAmount -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: El monto debe ser un número válido y no negativo.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Tax.calculateTax(Tax.java:14)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.TaxTest.testCalculateTaxWithInfiniteAmount(TaxTest.java:132)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

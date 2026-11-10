@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.152 s <<< FAILURE! -- in ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest.testCalculatePriceBySize -- Time elapsed: 0.045 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Beverage.calculatePriceBySize()" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest.testCalculatePriceBySize(BeverageTest.java:102)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest.testGetSize -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Beverage.getSize()" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest.testGetSize(BeverageTest.java:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest.testIsTemperature -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Beverage.isTemperature()" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest.testIsTemperature(BeverageTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest.testSetTemperature -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Beverage.setTemperature(boolean)" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest.testSetTemperature(BeverageTest.java:89)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest.testSetSize -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Beverage.setSize(char)" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.BeverageTest.testSetSize(BeverageTest.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

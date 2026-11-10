@@ -1,0 +1,44 @@
+[
+    {
+        "id": "CAT-001",
+        "name": "Catedral Metropolitana de Quito",
+        "city": "Quito",
+        "province": "Pichincha",
+        "architecturalStyle": "Colonial"
+    },
+    {
+        "id": "CAT-002",
+        "name": "Catedral de la Inmaculada Concepción",
+        "city": "Cuenca",
+        "province": "Azuay",
+        "architecturalStyle": "Neogothic and Romanesque influences"
+    },
+    {
+        "id": "CAT-003",
+        "name": "Catedral Metropolitana de Guayaquil",
+        "city": "Guayaquil",
+        "province": "Guayas",
+        "architecturalStyle": "Gothic Revival influences"
+    },
+    {
+        "id": "01",
+        "name": "Iglesia la Paz",
+        "city": "Riobamba",
+        "province": "Chimborazo",
+        "architecturalStyle": "Clasico"
+    },
+    {
+        "id": "02",
+        "name": "Iglesia de San Francisco",
+        "city": "Quito",
+        "province": "Pichincha",
+        "architecturalStyle": "Colonial"
+    },
+    {
+        "id": "03",
+        "name": "Catedral vieja de Cuenca",
+        "city": "Cuenca",
+        "province": "Azuay",
+        "architecturalStyle": "Colonial"
+    }
+]

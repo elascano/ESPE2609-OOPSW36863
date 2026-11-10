@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PromotionTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! -- in ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PromotionTest
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PromotionTest.testComputeDiscountWithNegativeAmount -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: El monto debe ser válido y no negativo.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Promotion.computeDiscount(Promotion.java:24)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PromotionTest.testComputeDiscountWithNegativeAmount(PromotionTest.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PromotionTest.testCreatePromotionWithNegativePercentage -- Time elapsed: 0 s <<< ERROR!
+java.lang.IllegalArgumentException: El descuento debe estar entre 0 y 100.
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Promotion.setDiscountPercentage(Promotion.java:44)
+	at ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Promotion.<init>(Promotion.java:11)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.PromotionTest.testCreatePromotionWithNegativePercentage(PromotionTest.java:110)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

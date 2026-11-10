@@ -1,0 +1,113 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 3, Errors: 10, Skipped: 0, Time elapsed: 0.049 s <<< FAILURE! -- in ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testSetDiscountPercentage -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.OrderDetail.setDiscountPercentage(double)" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testSetDiscountPercentage(OrderDetailTest.java:171)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testCalculateSubtotal -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <7.5> but was: <0.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testCalculateSubtotal(OrderDetailTest.java:183)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testSetSubTotal -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.OrderDetail.setSubTotal(float)" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testSetSubTotal(OrderDetailTest.java:144)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testGetSubTotal -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.OrderDetail.getSubTotal()" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testGetSubTotal(OrderDetailTest.java:130)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testGetProduct -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.OrderDetail.getProduct()" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testGetProduct(OrderDetailTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testSetQuantity -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.OrderDetail.setQuantity(int)" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testSetQuantity(OrderDetailTest.java:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testGetDiscountPercentage -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.OrderDetail.getDiscountPercentage()" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testGetDiscountPercentage(OrderDetailTest.java:157)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testGetQuantity -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.OrderDetail.getQuantity()" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testGetQuantity(OrderDetailTest.java:76)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testGetUnitPrice -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.OrderDetail.getUnitPrice()" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testGetUnitPrice(OrderDetailTest.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testCalculateDiscount -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0.6> but was: <0.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testCalculateDiscount(OrderDetailTest.java:193)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testSetProduct -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.OrderDetail.setProduct(ec.edu.espe.ConixCoffeeAndIceCreamShop.model.Product)" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testSetProduct(OrderDetailTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testCalculateTotal -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <4.0> but was: <40.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testCalculateTotal(OrderDetailTest.java:203)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testSetUnitPrice -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espe.ConixCoffeeAndIceCreamShop.model.OrderDetail.setUnitPrice(float)" because "instance" is null
+	at ec.edu.espe.ConixCoffeeAndIcecreamShop.model.OrderDetailTest.testSetUnitPrice(OrderDetailTest.java:117)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

@@ -1,0 +1,16 @@
+{
+  "name": "mask-manager",
+  "version": "1.0.0",
+  "description": "Gestor de máscaras en TypeScript con arquitectura MVC y persistencia en JSON",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "tsc",
+    "serve": "node dist/main.js"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
