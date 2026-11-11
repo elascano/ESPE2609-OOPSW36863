@@ -1,0 +1,14 @@
+{
+    "name": "sd-card-mvc",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "tsx src/main.ts"
+    },
+    "dependencies": {
+        "tsx": "^4.19.0",
+        "typescript": "^5.7.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.0.0"
+    }
+}
