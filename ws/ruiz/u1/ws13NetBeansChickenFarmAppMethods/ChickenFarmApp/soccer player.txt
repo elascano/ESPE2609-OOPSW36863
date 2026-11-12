@@ -1,0 +1,94 @@
+import json
+
+FILE_PATH = "players.json"
+
+
+class SoccerPlayer:
+    """Soccer Player."""
+
+    def __init__(self, id: int, name: str, position: str, shirt_number: int):
+        self.id = id
+        self.name = name
+        self.position = position
+        self.shirt_number = shirt_number
+
+    def to_dict(self) -> dict:
+        return {
+            "id": self.id,
+            "name": self.name,
+            "position": self.position,
+            "shirt_number": self.shirt_number,
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "SoccerPlayer":
+        return cls(data["id"], data["name"], data["position"], data["shirt_number"])
+
+    def __str__(self) -> str:
+        return f"ID: {self.id} | {self.name} | {self.position} | #{self.shirt_number}"
+
+
+def ask_int(message: str) -> int:
+    while True:
+        try:
+            return int(input(message))
+        except ValueError:
+            print("Please enter a valid number.")
+
+
+def ask_text(message: str) -> str:
+    while True:
+        value = input(message).strip()
+        if value:
+            return value
+        print("This field cannot be empty.")
+
+
+def create_players() -> list[SoccerPlayer]:
+    """Ask for the data and fill the list."""
+    players: list[SoccerPlayer] = []
+    while True:
+        player_id = ask_int("ID: ")
+        if any(p.id == player_id for p in players):
+            print(f"A player with ID {player_id} already exists.")
+            continue
+
+        players.append(SoccerPlayer(
+            player_id,
+            ask_text("Name: "),
+            ask_text("Position: "),
+            ask_int("Shirt number: "),
+        ))
+
+        if input("Add another player? (y/n): ").strip().lower() != "y":
+            break
+    return players
+
+
+def save_to_json(players: list[SoccerPlayer], path: str) -> None:
+    with open(path, "w", encoding="utf-8") as file:
+        json.dump([p.to_dict() for p in players], file, indent=4, ensure_ascii=False)
+
+
+def read_from_json(path: str) -> list[SoccerPlayer]:
+    with open(path, "r", encoding="utf-8") as file:
+        return [SoccerPlayer.from_dict(d) for d in json.load(file)]
+
+
+def main() -> None:
+    players = create_players()
+    save_to_json(players, FILE_PATH)
+    print(f"\nData saved in {FILE_PATH}")
+
+    print("\n--- Players read from JSON ---")
+    for player in read_from_json(FILE_PATH):
+        print(player)
+
+
+if __name__ == "__main__":
+    main()
+
+players = [
+    SoccerPlayer(1, "Moisés Caicedo", "Midfielder", 25),
+    SoccerPlayer(2, "Enner Valencia", "Forward", 13),
+]
