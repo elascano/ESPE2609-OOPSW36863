@@ -15,7 +15,7 @@ class MixerRepository:
         records = json.loads(self.file_path.read_text(encoding="utf-8"))
         if not isinstance(records, list):
             raise ValueError("Expected a list in the JSON file.")
-        # Earlier project files used Spanish keys.
+        
         legacy_keys = {"marca": "brand", "modelo": "model", "canales": "channel_count"}
         mixers = []
         for record in records:
