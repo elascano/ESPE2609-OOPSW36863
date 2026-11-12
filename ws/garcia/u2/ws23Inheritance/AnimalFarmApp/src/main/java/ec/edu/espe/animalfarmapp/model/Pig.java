@@ -14,8 +14,8 @@ public class Pig extends FarmAnimal{
     private float weightKg;
     private boolean isForBreeding;
 
-    public Pig(float weightKg, boolean isForBreeding, int id, String bread, Date bornOnDate) {
-        super(id, bread, bornOnDate);
+    public Pig(float weightKg, boolean isForBreeding, int id, String breed, Date bornOnDate) {
+        super(id, breed, bornOnDate);
         this.weightKg = weightKg;
         this.isForBreeding = isForBreeding;
     }

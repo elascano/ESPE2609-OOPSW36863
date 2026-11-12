@@ -14,8 +14,8 @@ public class Cow extends FarmAnimal {
     private boolean IsProducingMilk;
     private float litersOfMilkPerWeek;
 
-    public Cow(boolean IsProducingMilk, float litersOfMilkPerWeek, int id, String bread, Date bornOnDate) {
-        super(id, bread, bornOnDate);
+    public Cow(boolean IsProducingMilk, float litersOfMilkPerWeek, int id, String breed, Date bornOnDate) {
+        super(id, breed, bornOnDate);
         this.IsProducingMilk = IsProducingMilk;
         this.litersOfMilkPerWeek = litersOfMilkPerWeek;
     }

@@ -14,8 +14,8 @@ public class Sheep extends FarmAnimal {
     private float woolProductionkg;
     private boolean isSheared;
 
-    public Sheep(float woolProductionkg, boolean isSheared, int id, String bread, Date bornOnDate) {
-        super(id, bread, bornOnDate);
+    public Sheep(float woolProductionkg, boolean isSheared, int id, String breed, Date bornOnDate) {
+        super(id, breed, bornOnDate);
         this.woolProductionkg = woolProductionkg;
         this.isSheared = isSheared;
     }

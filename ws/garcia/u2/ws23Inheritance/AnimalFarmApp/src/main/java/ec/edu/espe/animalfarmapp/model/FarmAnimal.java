@@ -13,12 +13,12 @@ import java.util.Date;
 public class FarmAnimal {
     
     private int id;
-    private String bread;
+    private String breed;
     private Date bornOnDate;
 
-    public FarmAnimal(int id, String bread, Date bornOnDate) {
+    public FarmAnimal(int id, String breed, Date bornOnDate) {
         this.id = id;
-        this.bread = bread;
+        this.breed = breed;
         this.bornOnDate = bornOnDate;
     }
 
@@ -26,7 +26,7 @@ public class FarmAnimal {
     
     @Override
     public String toString() {
-        return "id = " + id + ", bread = " + bread +
+        return "id = " + id + ", breed = " + breed +
                 ", bornOnDate = " + (bornOnDate.getDate()+1) + "/" + bornOnDate.getMonth() + 
                 "/" + (bornOnDate.getYear()+1900) + ", ";
     }
@@ -52,17 +52,17 @@ public class FarmAnimal {
     }
 
     /**
-     * @return the bread
+     * @return the breed
      */
-    public String getBread() {
-        return bread;
+    public String getBreed() {
+        return breed;
     }
 
     /**
-     * @param bread the bread to set
+     * @param breed the breed to set
      */
-    public void setBread(String bread) {
-        this.bread = bread;
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
 
     /**

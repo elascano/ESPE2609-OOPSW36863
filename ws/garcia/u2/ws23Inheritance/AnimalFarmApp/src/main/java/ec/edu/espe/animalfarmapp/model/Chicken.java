@@ -19,8 +19,8 @@ public class Chicken extends FarmAnimal {
     }
     
     
-    public Chicken(boolean isMolting, int numberOfLaidEggsInAMonth, boolean isMeat, int id, String bread, Date bornOnDate) {
-        super(id, bread, bornOnDate);
+    public Chicken(boolean isMolting, int numberOfLaidEggsInAMonth, boolean isMeat, int id, String breed, Date bornOnDate) {
+        super(id, breed, bornOnDate);
         this.isMolting = isMolting;
         this.numberOfLaidEggsInAMonth = numberOfLaidEggsInAMonth;
         this.isMeat = isMeat;
