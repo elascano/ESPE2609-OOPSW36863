@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Animal App",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/AnimalApp.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+ec\edu\espe\animal\model\Cow.class
+ec\edu\espe\animal\model\Sheep.class
+ec\edu\espe\animal\model\FarmAnimal.class
+ec\edu\espe\animal\model\Chicken.class
+ec\edu\espe\animal\model\Pig.class
+ec\edu\espe\animal\view\Animal.class

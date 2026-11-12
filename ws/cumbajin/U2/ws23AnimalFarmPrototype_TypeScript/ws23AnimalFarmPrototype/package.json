@@ -1,0 +1,16 @@
+{
+  "name": "ws23-animal-farm-prototype",
+  "version": "1.0.0",
+  "description": "Workshop 23 - Animal Farm Prototype in TypeScript",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/AnimalApp.js",
+    "dev": "npm run build && npm run start",
+    "test": "npm run build && node --test dist/tests/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "animalfarmapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/view/AnimalFarmApp.js",
+    "dev": "tsx src/view/AnimalFarmApp.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0"
+  }
+}

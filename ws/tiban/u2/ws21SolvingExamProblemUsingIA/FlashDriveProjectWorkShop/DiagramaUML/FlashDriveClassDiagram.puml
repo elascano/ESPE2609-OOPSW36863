@@ -1,0 +1,103 @@
+@startuml FlashDriveClassDiagram
+title FlashDriveProject - Diagrama de clases (version Clean Code)
+
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+package "model" {
+    class FlashDrive {
+        - id : number
+        - brand : string
+        - capacityGB : number
+        - usbVersion : string
+        + FlashDrive(id : number, brand : string, capacityGB : number, usbVersion : string)
+        + {static} fromRecord(record : FlashDriveRecord) : FlashDrive
+        + toRecord() : FlashDriveRecord
+        + getId() : number
+        + getBrand() : string
+        + getCapacityGB() : number
+        + getUsbVersion() : string
+        + setId(id : number) : void
+        + setBrand(brand : string) : void
+        + setCapacityGB(capacityGB : number) : void
+        + setUsbVersion(usbVersion : string) : void
+        + toString() : string
+    }
+
+    interface FlashDriveRecord <<interface>> {
+        + id : number
+        + brand : string
+        + capacityGB : number
+        + usbVersion : string
+    }
+}
+
+package "data" {
+    class FlashDriveJsonFile {
+        - {static} FILE_ENCODING : string = "utf-8"
+        - {static} JSON_INDENTATION_SPACES : number = 4
+        - filePath : string {readOnly}
+        + FlashDriveJsonFile(filePath : string)
+        + getFilePath() : string
+        + save(flashDrives : FlashDrive[]) : void
+        + read() : FlashDrive[]
+        - readFileText() : string
+    }
+}
+
+package "view" {
+    class ConsoleMenu {
+        - jsonFile : FlashDriveJsonFile {readOnly}
+        - consoleInput : ConsoleInput {readOnly}
+        - flashDrives : FlashDrive[]
+        + ConsoleMenu(jsonFile : FlashDriveJsonFile, consoleInput : ConsoleInput)
+        + start() : Promise<void>
+        - printMenu() : void
+        - runOption(selectedOption : string) : Promise<void>
+        - createFlashDrive() : Promise<void>
+        - askUnusedId() : Promise<number>
+        - isIdInUse(id : number) : boolean
+        - showFlashDrives() : void
+    }
+
+    class ConsoleInput {
+        - lineReader : readline.Interface {readOnly}
+        - linesNotYetRequested : string[] {readOnly}
+        - receiverOfNextAnswer : AnswerReceiver | null
+        + ConsoleInput()
+        + ask(question : string) : Promise<string>
+        + askNonEmptyText(question : string) : Promise<string>
+        + askPositiveInteger(question : string) : Promise<number>
+        + close() : void
+        - handleTypedLine(typedLine : string) : void
+        - isPositiveInteger(text : string) : boolean
+    }
+
+    enum MenuOption <<enumeration>> {
+        CreateFlashDrive = "1"
+        ShowFlashDrives = "2"
+        Exit = "0"
+    }
+}
+
+class Main <<main.ts>> {
+    - {static} DATA_FILE_PATH : string
+    + {static} main() : void
+}
+
+' ---------- Relaciones ----------
+ConsoleMenu "1" --> "1" FlashDriveJsonFile : jsonFile
+ConsoleMenu "1" --> "1" ConsoleInput : consoleInput
+ConsoleMenu "1" o--> "0..*" FlashDrive : flashDrives
+ConsoleMenu ..> MenuOption : <<use>>
+
+FlashDriveJsonFile ..> FlashDrive : <<create>>
+FlashDriveJsonFile ..> FlashDriveRecord : <<use>>
+FlashDrive ..> FlashDriveRecord : <<use>>
+
+Main ..> FlashDriveJsonFile : <<create>>
+Main ..> ConsoleInput : <<create>>
+Main ..> ConsoleMenu : <<create>>
+
+@enduml

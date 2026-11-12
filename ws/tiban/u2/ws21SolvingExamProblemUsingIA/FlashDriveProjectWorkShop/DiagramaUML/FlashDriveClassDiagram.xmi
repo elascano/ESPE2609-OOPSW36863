@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><XMI xmlns:UML="href://org.omg/UML/1.3" xmi.version="1.1">
+    <XMI.header>
+        <XMI.metamodel xmi.name="UML" xmi.version="1.3"/>
+    </XMI.header>
+    <XMI.content>
+        <UML:Model name="PlantUML" xmi.id="model1">
+            <UML:Namespace.ownedElement>
+                <UML:Class name="FlashDrive" namespace="model" xmi.id="cl0003">
+                    <UML:Classifier.feature>
+                        <UML:Attribute name="id : number" visibility="private" xmi.id="att22"/>
+                        <UML:Attribute name="brand : string" visibility="private" xmi.id="att23"/>
+                        <UML:Attribute name="capacityGB : number" visibility="private" xmi.id="att24"/>
+                        <UML:Attribute name="usbVersion : string" visibility="private" xmi.id="att25"/>
+                        <UML:Operation name="FlashDrive(id : number, brand : string, capacityGB : number, usbVersion : string)" visibility="public" xmi.id="att26"/>
+                        <UML:Operation name="fromRecord(record : FlashDriveRecord) : FlashDrive" visibility="public" xmi.id="att27"/>
+                        <UML:Operation name="toRecord() : FlashDriveRecord" visibility="public" xmi.id="att28"/>
+                        <UML:Operation name="getId() : number" visibility="public" xmi.id="att29"/>
+                        <UML:Operation name="getBrand() : string" visibility="public" xmi.id="att30"/>
+                        <UML:Operation name="getCapacityGB() : number" visibility="public" xmi.id="att31"/>
+                        <UML:Operation name="getUsbVersion() : string" visibility="public" xmi.id="att32"/>
+                        <UML:Operation name="setId(id : number) : void" visibility="public" xmi.id="att33"/>
+                        <UML:Operation name="setBrand(brand : string) : void" visibility="public" xmi.id="att34"/>
+                        <UML:Operation name="setCapacityGB(capacityGB : number) : void" visibility="public" xmi.id="att35"/>
+                        <UML:Operation name="setUsbVersion(usbVersion : string) : void" visibility="public" xmi.id="att36"/>
+                        <UML:Operation name="toString() : string" visibility="public" xmi.id="att37"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class isInterface="true" name="FlashDriveRecord" namespace="model" xmi.id="cl0004">
+                    <UML:ModelElement.stereotype>
+                        <UML:Stereotype name="interface"/>
+                    </UML:ModelElement.stereotype>
+                    <UML:Classifier.feature>
+                        <UML:Attribute name="id : number" visibility="public" xmi.id="att38"/>
+                        <UML:Attribute name="brand : string" visibility="public" xmi.id="att39"/>
+                        <UML:Attribute name="capacityGB : number" visibility="public" xmi.id="att40"/>
+                        <UML:Attribute name="usbVersion : string" visibility="public" xmi.id="att41"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class name="FlashDriveJsonFile" namespace="data" xmi.id="cl0006">
+                    <UML:Classifier.feature>
+                        <UML:Attribute name="FILE_ENCODING : string = &quot;utf-8&quot;" visibility="private" xmi.id="att42"/>
+                        <UML:Attribute name="JSON_INDENTATION_SPACES : number = 4" visibility="private" xmi.id="att43"/>
+                        <UML:Attribute name="filePath : string {readOnly}" visibility="private" xmi.id="att44"/>
+                        <UML:Operation name="FlashDriveJsonFile(filePath : string)" visibility="public" xmi.id="att45"/>
+                        <UML:Operation name="getFilePath() : string" visibility="public" xmi.id="att46"/>
+                        <UML:Operation name="save(flashDrives : FlashDrive[]) : void" visibility="public" xmi.id="att47"/>
+                        <UML:Operation name="read() : FlashDrive[]" visibility="public" xmi.id="att48"/>
+                        <UML:Operation name="readFileText() : string" visibility="private" xmi.id="att49"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class name="ConsoleMenu" namespace="view" xmi.id="cl0008">
+                    <UML:Classifier.feature>
+                        <UML:Attribute name="jsonFile : FlashDriveJsonFile {readOnly}" visibility="private" xmi.id="att50"/>
+                        <UML:Attribute name="consoleInput : ConsoleInput {readOnly}" visibility="private" xmi.id="att51"/>
+                        <UML:Attribute name="flashDrives : FlashDrive[]" visibility="private" xmi.id="att52"/>
+                        <UML:Operation name="ConsoleMenu(jsonFile : FlashDriveJsonFile, consoleInput : ConsoleInput)" visibility="public" xmi.id="att53"/>
+                        <UML:Operation name="start() : Promise&lt;void&gt;" visibility="public" xmi.id="att54"/>
+                        <UML:Operation name="printMenu() : void" visibility="private" xmi.id="att55"/>
+                        <UML:Operation name="runOption(selectedOption : string) : Promise&lt;void&gt;" visibility="private" xmi.id="att56"/>
+                        <UML:Operation name="createFlashDrive() : Promise&lt;void&gt;" visibility="private" xmi.id="att57"/>
+                        <UML:Operation name="askUnusedId() : Promise&lt;number&gt;" visibility="private" xmi.id="att58"/>
+                        <UML:Operation name="isIdInUse(id : number) : boolean" visibility="private" xmi.id="att59"/>
+                        <UML:Operation name="showFlashDrives() : void" visibility="private" xmi.id="att60"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class name="ConsoleInput" namespace="view" xmi.id="cl0009">
+                    <UML:Classifier.feature>
+                        <UML:Attribute name="lineReader : readline.Interface {readOnly}" visibility="private" xmi.id="att61"/>
+                        <UML:Attribute name="linesNotYetRequested : string[] {readOnly}" visibility="private" xmi.id="att62"/>
+                        <UML:Attribute name="receiverOfNextAnswer : AnswerReceiver | null" visibility="private" xmi.id="att63"/>
+                        <UML:Operation name="ConsoleInput()" visibility="public" xmi.id="att64"/>
+                        <UML:Operation name="ask(question : string) : Promise&lt;string&gt;" visibility="public" xmi.id="att65"/>
+                        <UML:Operation name="askNonEmptyText(question : string) : Promise&lt;string&gt;" visibility="public" xmi.id="att66"/>
+                        <UML:Operation name="askPositiveInteger(question : string) : Promise&lt;number&gt;" visibility="public" xmi.id="att67"/>
+                        <UML:Operation name="close() : void" visibility="public" xmi.id="att68"/>
+                        <UML:Operation name="handleTypedLine(typedLine : string) : void" visibility="private" xmi.id="att69"/>
+                        <UML:Operation name="isPositiveInteger(text : string) : boolean" visibility="private" xmi.id="att70"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class name="MenuOption" namespace="view" xmi.id="cl0010">
+                    <UML:ModelElement.stereotype>
+                        <UML:Stereotype name="enumeration"/>
+                    </UML:ModelElement.stereotype>
+                    <UML:Classifier.feature>
+                        <UML:Attribute name="CreateFlashDrive = &quot;1&quot;" xmi.id="att71"/>
+                        <UML:Attribute name="ShowFlashDrives = &quot;2&quot;" xmi.id="att72"/>
+                        <UML:Attribute name="Exit = &quot;0&quot;" xmi.id="att73"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class name="Main" namespace="model1" xmi.id="cl0011">
+                    <UML:ModelElement.stereotype>
+                        <UML:Stereotype name="main.ts"/>
+                    </UML:ModelElement.stereotype>
+                    <UML:Classifier.feature>
+                        <UML:Attribute name="DATA_FILE_PATH : string" visibility="private" xmi.id="att74"/>
+                        <UML:Operation name="main() : void" visibility="public" xmi.id="att75"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Association name="jsonFile" namespace="model1" xmi.id="ass76">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass76" name="1" type="cl0008" xmi.id="end77">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass76" name="1" type="cl0006" xmi.id="end78">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="consoleInput" namespace="model1" xmi.id="ass79">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass79" name="1" type="cl0008" xmi.id="end80">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass79" name="1" type="cl0009" xmi.id="end81">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="flashDrives" namespace="model1" xmi.id="ass82">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd aggregation="aggregate" association="ass82" name="1" type="cl0008" xmi.id="end83">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass82" name="0..*" type="cl0003" xmi.id="end84">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="«use»" namespace="model1" xmi.id="ass85">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass85" type="cl0008" xmi.id="end86">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass85" type="cl0010" xmi.id="end87">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="«create»" namespace="model1" xmi.id="ass88">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass88" type="cl0006" xmi.id="end89">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass88" type="cl0003" xmi.id="end90">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="«use»" namespace="model1" xmi.id="ass91">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass91" type="cl0006" xmi.id="end92">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass91" type="cl0004" xmi.id="end93">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="«use»" namespace="model1" xmi.id="ass94">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass94" type="cl0003" xmi.id="end95">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass94" type="cl0004" xmi.id="end96">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="«create»" namespace="model1" xmi.id="ass97">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass97" type="cl0011" xmi.id="end98">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass97" type="cl0006" xmi.id="end99">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="«create»" namespace="model1" xmi.id="ass100">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass100" type="cl0011" xmi.id="end101">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass100" type="cl0009" xmi.id="end102">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="«create»" namespace="model1" xmi.id="ass103">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass103" type="cl0011" xmi.id="end104">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass103" type="cl0008" xmi.id="end105">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+            </UML:Namespace.ownedElement>
+        </UML:Model>
+    </XMI.content>
+</XMI>

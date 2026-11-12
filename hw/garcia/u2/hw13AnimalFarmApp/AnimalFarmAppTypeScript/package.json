@@ -1,0 +1,13 @@
+{
+  "name": "animalfarmapp",
+  "version": "1.0.0",
+  "main": "src/ec/edu/espe/animalfarmapp/view/AnimalFarmApp.ts",
+  "scripts": {
+    "start": "ts-node src/ec/edu/espe/animalfarmapp/view/AnimalFarmApp.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
