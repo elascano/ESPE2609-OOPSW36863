@@ -1,0 +1,16 @@
+{
+  "name": "animalfarm-ts",
+  "version": "1.0.0",
+  "description": "AnimalFarm MVC en TypeScript",
+  "main": "dist/AnimalFarm.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/AnimalFarm.js",
+    "dev": "ts-node src/AnimalFarm.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
