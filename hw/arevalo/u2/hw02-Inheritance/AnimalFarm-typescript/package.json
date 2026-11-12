@@ -1,0 +1,13 @@
+{
+  "name": "animal-farm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Animal Farm inheritance exercise in TypeScript",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/animal_farm.js"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3"
+  }
+}
