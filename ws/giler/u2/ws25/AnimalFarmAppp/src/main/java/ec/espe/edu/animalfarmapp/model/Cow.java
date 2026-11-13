@@ -10,12 +10,26 @@ import java.util.Date;
  *
  * @author Ariel Giler, CodeX3Team, @ESPE
  */
-public class Cow extends FarmAnimal{
+public class Cow extends FarmAnimal implements grazeAnimal{
     private boolean isProductingMilk;
     private float litersOfMilkPerWeek;
     
+    public void milk(int amountOfLiters){
+        litersOfMilkPerWeek += amountOfLiters;
+        System.out.println("milking the cow for " + amountOfLiters + " liters");
+    }
+    
+    public void milk(float amountOfLiters){
+        litersOfMilkPerWeek += amountOfLiters;
+        System.out.println("milking the cow for " + amountOfLiters + " liters");
+    }
+    
+    public void milk(int amountOfLiters, Date hour){
+        System.out.println("milking the cow for " + amountOfLiters + " liters, at "+hour.getHours() + ":" +hour.getMinutes());
+    }
+    
     public void milk(){
-        System.out.println("milking the cow");
+        System.out.println("milking the cow as I need");
     }
 
     public Cow(boolean isProductingMilk, float litersOfMilkPerWeek, int id, String breed, Date bornOnDate) {
@@ -25,8 +39,13 @@ public class Cow extends FarmAnimal{
     }
     
     @Override
+    public void graze(Location location) {
+        System.out.println("Cow is grazing at --> " + location);
+    }
+    
+    @Override
     public void feed(Food food, int amountOfFood) {
-         System.out.println("feeding a cow with -->" + amountOfFood + " of "+ food);
+         System.out.println("feeding a cow in the stable with --> "+ food);
     }
 
     @Override

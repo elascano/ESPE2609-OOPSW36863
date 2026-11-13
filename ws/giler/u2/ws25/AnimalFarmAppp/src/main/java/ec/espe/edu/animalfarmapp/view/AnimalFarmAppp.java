@@ -55,7 +55,12 @@ public abstract class AnimalFarmAppp {
         chicken.feed(food,2);
         
         food = new Food("grass");
-        
         cow1.feed(food, 3);
+        
+        cow1.milk();
+        cow1.milk(3.23F);
+        cow1.milk(2);
+        cow1.milk(1, bornOnDate);
+
     }
 }
