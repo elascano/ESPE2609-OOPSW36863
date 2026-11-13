@@ -1,0 +1,21 @@
+AnimalFarmclass - Python
+
+Paquetes bajo src/main/python/ec/edu/espe/animalfarm/:
+  model/       Chicken.py, Cow.py, FarmAnimal.py, Pig.py, Sheep.py
+  view/        AnimalFarm.py (programa principal)
+  controller/  carpeta vacia, reservada para los controladores
+Los archivos __init__.py identifican los paquetes de Python.
+Clases: AnimalFarm, FarmAnimal, Chicken, Cow, Pig y Sheep.
+Se mantienen los nombres de metodos, atributos, orden de los constructores, herencia y ejemplos.
+FarmAnimal sigue siendo abstracta. getAgeInMonths() sigue devolviendo 0, como en Java.
+Las fechas usan el tipo nativo del lenguaje; lastShearing se imprime con su formato nativo.
+Solo se adaptan la sintaxis y los archivos necesarios para ejecutar cada lenguaje.
+
+Codigo: src/main/python/ec/edu/espe/animalfarm/
+Requiere Python 3.10 o superior. No necesita bibliotecas adicionales.
+
+Desde la carpeta del proyecto:
+  python run.py
+
+En Windows tambien puedes usar:
+  py run.py

@@ -1,0 +1,24 @@
+AnimalFarmclass - TypeScript
+
+Paquetes bajo src/main/typescript/ec/edu/espe/animalfarm/:
+  model/       Chicken.ts, Cow.ts, FarmAnimal.ts, Pig.ts, Sheep.ts
+  view/        AnimalFarm.ts (programa principal)
+  controller/  carpeta vacia, reservada para los controladores
+Clases: AnimalFarm, FarmAnimal, Chicken, Cow, Pig y Sheep.
+Se mantienen los nombres de metodos, atributos, orden de los constructores, herencia y ejemplos.
+FarmAnimal sigue siendo abstracta. getAgeInMonths() sigue devolviendo 0, como en Java.
+Las fechas usan el tipo nativo del lenguaje; lastShearing se imprime con su formato nativo.
+Solo se adaptan la sintaxis y los archivos necesarios para ejecutar cada lenguaje.
+
+Codigo: src/main/typescript/ec/edu/espe/animalfarm/
+Requiere Node.js 18 o superior y npm.
+
+Para compilar y ejecutar desde la carpeta del proyecto:
+  npm install
+  npm run build
+  npm start
+
+Se incluye target/classes con el JavaScript ya compilado. Para ejecutar esa version:
+  npm start
+
+Si PowerShell bloquea npm.ps1, escribe npm.cmd en lugar de npm.

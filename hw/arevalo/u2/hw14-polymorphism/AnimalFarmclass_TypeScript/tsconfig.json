@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "rootDir": "src/main/typescript",
+    "outDir": "target/classes",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noEmitOnError": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/main/typescript/**/*.ts"
+  ]
+}

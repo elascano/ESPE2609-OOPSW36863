@@ -1,0 +1,12 @@
+{
+  "name": "animalfarmclass",
+  "version": "0.9.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node target/classes/ec/edu/espe/animalfarm/view/AnimalFarm.js"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}

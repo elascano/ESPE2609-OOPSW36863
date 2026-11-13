@@ -1,0 +1,18 @@
+AnimalFarmclass actualizado
+
+Cambios:
+- Se agregaron Pig y Sheep desde el proyecto AnimalFarm, con ejemplos en main.
+- Se corrigio la variable cow duplicada y la referencia a cow2.
+- Se conservaron FarmAnimal abstracta, el ejemplo de polimorfismo, milk() y layAnEgg().
+- Se corrigieron las fechas de ejemplo para representar los anios indicados.
+
+Abrir en NetBeans:
+1. Descomprimir el ZIP.
+2. Archivo > Abrir proyecto > seleccionar AnimalFarmclass.
+3. Limpiar y construir; luego ejecutar el proyecto.
+
+Requiere JDK 18 o superior.
+Clase principal: ec.edu.espe.animalfarm.AnimalFarm
+
+Verificacion: Maven package termino con BUILD SUCCESS y el programa se ejecuto
+correctamente, mostrando Chicken, Cow, Pig y Sheep.
