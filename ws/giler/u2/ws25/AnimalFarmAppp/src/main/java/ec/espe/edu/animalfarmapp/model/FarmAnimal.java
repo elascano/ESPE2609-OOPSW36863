@@ -10,11 +10,18 @@ import java.util.Date;
  *
  * @author Ariel Giler, CodeX3Team, @ESPE
  */
-public class FarmAnimal {
+public abstract class FarmAnimal {
     private int id;
     private String breed;
     private Date bornOnDate;
-
+    
+    /**
+     * Feed the animals with their own food
+     * @param food 
+     * @param amountOfFood 
+     */
+    public abstract void feed(Food food, int amountOfFood);
+    
     @Override
     public String toString() {
         return "id=" + id + ", breed=" + breed + 

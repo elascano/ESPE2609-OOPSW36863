@@ -23,6 +23,11 @@ public class Cow extends FarmAnimal{
         this.isProductingMilk = isProductingMilk;
         this.litersOfMilkPerWeek = litersOfMilkPerWeek;
     }
+    
+    @Override
+    public void feed(Food food, int amountOfFood) {
+         System.out.println("feeding a cow with -->" + amountOfFood + " of "+ food);
+    }
 
     @Override
     public String toString() {
@@ -56,7 +61,5 @@ public class Cow extends FarmAnimal{
      */
     public void setLitersOfMilkPerWeek(float litersOfMilkPerWeek) {
         this.litersOfMilkPerWeek = litersOfMilkPerWeek;
-    }
-    
-    
+    }  
 }

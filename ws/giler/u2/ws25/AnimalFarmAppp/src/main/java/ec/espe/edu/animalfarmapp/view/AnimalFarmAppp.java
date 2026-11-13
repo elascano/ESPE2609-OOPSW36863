@@ -7,6 +7,7 @@ package ec.espe.edu.animalfarmapp.view;
 import ec.espe.edu.animalfarmapp.model.Chicken;
 import ec.espe.edu.animalfarmapp.model.Cow;
 import ec.espe.edu.animalfarmapp.model.FarmAnimal;
+import ec.espe.edu.animalfarmapp.model.Food;
 import java.util.Date;
 
 /**
@@ -17,11 +18,12 @@ public abstract class AnimalFarmAppp {
 
     public static void main(String[] args) {
         Date bornOnDate = new Date(2020,10,10);
-        System.out.println("Hello this is Stalyn's Animal Farm - Abstraction Exercise");
+        System.out.println("Hello this is Ariel's Animal Farm - Abstraction Exercise");
         FarmAnimal farmAnimal;
         FarmAnimal farmAnimalForFeeding;
+        Food food = new Food("corn");
         
-        farmAnimal = new FarmAnimal(1, "holstein", bornOnDate);
+        farmAnimal = new Cow(true, 1, 10, "Holstein", bornOnDate);
         
         farmAnimal = new Chicken(true, 1, true, 0, "Paliish", bornOnDate);
         
@@ -49,9 +51,11 @@ public abstract class AnimalFarmAppp {
         
         Cow cow1 = new Cow(true, 10, 5, "Holstein", new Date(10/10/2020));
         cow1.milk();
+        
+        chicken.feed(food,2);
+        
+        food = new Food("grass");
+        
+        cow1.feed(food, 3);
     }
-    
-    
-    
-    
 }

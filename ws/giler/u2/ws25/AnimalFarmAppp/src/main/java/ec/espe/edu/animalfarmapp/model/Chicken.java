@@ -16,12 +16,15 @@ public class Chicken extends FarmAnimal{
     private boolean isMeat;
 
     @Override
+    public void feed(Food food, int amountOfFood) {
+        System.out.println("feeding a chicken with -->" + amountOfFood + " of " + food);
+    }
+    
+    @Override
     public String toString() {
         return "Chicken{" + super.toString() + "isMolting=" + isMolting + ", numberOfLaidEggsInMonths=" + numberOfLaidEggsInMonths + ", isMeat=" + isMeat + '}';
     }
 
-    
-    
     public Chicken(boolean isMolting, int numberOfLaidEggsInMonths, boolean isMeat, int id, String breed, Date bornOnDate) {
         super(id, breed, bornOnDate);
         this.isMolting = isMolting;
@@ -75,7 +78,4 @@ public class Chicken extends FarmAnimal{
     public void setIsMeat(boolean isMeat) {
         this.isMeat = isMeat;
     }
-    
-    
-    
 }
