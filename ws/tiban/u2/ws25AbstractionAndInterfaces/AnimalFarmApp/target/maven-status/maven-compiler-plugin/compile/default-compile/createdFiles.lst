@@ -1,0 +1,7 @@
+ec\edu\espe\animalfarmapp\model\Food.class
+ec\edu\espe\animalfarmapp\model\Chicken.class
+ec\edu\espe\animalfarmapp\model\grazeAnimal.class
+ec\edu\espe\animalfarmapp\view\AnimalFarmApp.class
+ec\edu\espe\animalfarmapp\model\Cow.class
+ec\edu\espe\animalfarmapp\model\FarmAnimal.class
+ec\edu\espe\animalfarmapp\model\Location.class

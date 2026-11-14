@@ -1,0 +1,23 @@
+--no-fonts
+-encoding
+'UTF-8'
+-protected
+--release
+26
+-sourcepath
+'C:/Users/USER/Documents/NetBeansProjects/ws25/AnimalFarmApp/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/USER/Documents/NetBeansProjects/ws25/AnimalFarmApp/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'AnimalFarmApp 0.9 API'
+-use
+-version
+-windowtitle
+'AnimalFarmApp 0.9 API'
