@@ -1,0 +1,23 @@
+--no-fonts
+-encoding
+'UTF-8'
+-protected
+--release
+18
+-sourcepath
+'C:/Users/Asus/Desktop/Faltantes/ws25/AnimalFarm/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Asus/Desktop/Faltantes/ws25/AnimalFarm/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'AnimalFarmApp 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'AnimalFarmApp 1.0-SNAPSHOT API'
