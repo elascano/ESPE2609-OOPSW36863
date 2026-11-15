@@ -7,7 +7,7 @@ import java.util.Date;
  *
  * @author Julian Olalla, 404 Founders, @ESPE
  */
-public class FarmAnimal {
+public abstract class FarmAnimal {
     private int id;
     private String breed;
     private Date bornOnDate;

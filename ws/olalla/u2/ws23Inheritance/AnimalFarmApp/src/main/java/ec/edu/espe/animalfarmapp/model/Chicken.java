@@ -18,6 +18,10 @@ public class Chicken extends FarmAnimal{
         this.numberOfLaidEggsInMonth = numberOfLaidEggsInMonth;
         this.isMeat = isMeat;
     }
+    
+    public void layAnEgg(){
+        System.out.println("chicken is laying an egg");
+    }
 
     @Override
     public String toString() {

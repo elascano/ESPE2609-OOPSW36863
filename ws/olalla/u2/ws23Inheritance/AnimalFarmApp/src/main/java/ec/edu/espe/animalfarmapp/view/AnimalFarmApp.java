@@ -17,20 +17,43 @@ public class AnimalFarmApp {
     public static void main(String[] args) {
         System.out.println("Hello this is Julian's Animal Farm!");
         FarmAnimal farmAnimal;
-        farmAnimal = new FarmAnimal(1, "holstein", new Date());
+        Date bornOnDate = new Date(2020, 10 ,10);
+        farmAnimal = new Cow(true, 6, 10, "houlstein", bornOnDate);      
+        
+        System.out.println("farmAnimal is a -->" + farmAnimal.getClass().getSimpleName());
         
         System.out.println("my farm animal -->" + farmAnimal);
         
         Chicken chicken = new Chicken(true, 10, true, 2, "Paleesh", new Date());
         System.out.println("Chicken -->" + chicken); 
+        chicken.layAnEgg();
         
-        FarmAnimal cow = new Cow(true, 100.5F, 3, "holstein", new Date(2022, 20, 20));
-        System.out.println("Cow -->" + cow);
+        
+        FarmAnimal farAnimalForFeeding = new Chicken(true, 20, true, 30, "palleesh", bornOnDate);
+        
+        
+        System.out.println("farAnimalForFeeding is a -->" + farAnimalForFeeding.getClass());
+        System.out.println("farAnimalForFeeding is a -->" + farAnimalForFeeding.getClass().getSimpleName());
+        
+        farAnimalForFeeding = new Cow(true, 7, 5, "houlstein", bornOnDate);
+        System.out.println("farAnimalForFeeding is a -->" + farAnimalForFeeding.getClass().getSimpleName());
+        
+        farAnimalForFeeding = new Chicken(true, 5, true, 0, "Paliish", bornOnDate);
+        System.out.println("farAnimalForFeeding is a -->" + farAnimalForFeeding.getClass().getSimpleName());
+        
+        System.out.println("Cow -->" + farAnimalForFeeding);
+        
+        Cow cow = new Cow(true, 10, 20, "houlstein", bornOnDate);
+        cow.milk();
+        
+        /*
         
         FarmAnimal pig = new Pig(true, 3, "Berkshire", new Date(2020, 15, 1));
         System.out.println("Pig -->" + pig);
         
         FarmAnimal sheep = new Sheep(new Date(), 4, "Merino", new Date(2023, 10, 5));
         System.out.println("Sheep -->" + sheep);
+
+        */
     }
 }

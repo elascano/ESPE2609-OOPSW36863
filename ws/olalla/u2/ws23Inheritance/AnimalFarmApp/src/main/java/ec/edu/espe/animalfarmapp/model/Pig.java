@@ -7,30 +7,30 @@ import java.util.Date;
  * @author Julian Olalla, 404 Founders, @ESPE
  */
 public class Pig extends FarmAnimal{
-    private boolean isDelicious;
+    private boolean isReadyToEat;
 
     public Pig(boolean isDelicious, int id, String breed, Date bornOnDate) {
         super(id, breed, bornOnDate);
-        this.isDelicious = isDelicious;
+        this.isReadyToEat = isDelicious;
     }
 
     @Override
     public String toString() {
-        return "Pig{" + super.toString() + "isDelicious=" + isDelicious + '}';
+        return "Pig{" + super.toString() + "isDelicious=" + isReadyToEat + '}';
     }    
     
     /**
-     * @return the isDelicious
+     * @return the isReadyToEat
      */
-    public boolean isIsDelicious() {
-        return isDelicious;
+    public boolean isIsReadyToEat() {
+        return isReadyToEat;
     }
 
     /**
-     * @param isDelicious the isDelicious to set
+     * @param isReadyToEat the isReadyToEat to set
      */
-    public void setIsDelicious(boolean isDelicious) {
-        this.isDelicious = isDelicious;
+    public void setIsReadyToEat(boolean isReadyToEat) {
+        this.isReadyToEat = isReadyToEat;
     }
     
     
