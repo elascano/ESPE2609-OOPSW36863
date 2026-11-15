@@ -1,0 +1,17 @@
+{
+  "name": "animal-farm-mvc",
+  "version": "1.0.0",
+  "description": "Animal Farm Abstraction Exercise in TypeScript MVC",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
