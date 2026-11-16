@@ -1,0 +1,14 @@
+{
+  "name": "animalfarmapp",
+  "version": "1.0.0",
+  "description": "AnimalFarmApp portado de Java a TypeScript",
+  "main": "dist/view/AnimalFarmApp.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/view/AnimalFarmApp.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
