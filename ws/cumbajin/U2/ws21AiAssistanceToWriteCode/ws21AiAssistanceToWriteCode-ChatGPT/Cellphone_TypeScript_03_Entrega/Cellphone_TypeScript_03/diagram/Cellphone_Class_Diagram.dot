@@ -1,0 +1,24 @@
+digraph CellphoneMVC {
+  graph [label="Cellphone System — MVC + JSON (Student 03)", labelloc=t, fontsize=20, fontname="Arial", bgcolor="white", ranksep=0.75, nodesep=0.5, pad=0.3];
+  node [shape=record, style="rounded,filled", fillcolor="#F3F7FD", color="#53718A", fontname="Arial", fontsize=11, margin="0.16,0.10"];
+  edge [color="#547089", fontname="Arial", fontsize=10, arrowsize=0.75];
+
+  Cellphone [label="{Cellphone (Model)|+ id: string\l+ brand: string\l+ model: string\l+ storageGB: number\l|+ constructor(id, brand, model, storageGB)\l+ toJSON(): CellphoneData\l+ fromObject(value): Cellphone\l}"];
+  ArrayList [label="{ArrayList\<T\>|- elements: T[]\l|+ add(item): void\l+ size(): number\l+ isEmpty(): boolean\l+ some(predicate): boolean\l+ toArray(): T[]\l}"];
+  Repository [label="{CellphoneRepository| - filePath: string\l|+ readAll(): ArrayList\<Cellphone\>\l+ saveAll(cellphones): void\l}"];
+  Controller [label="{CellphoneController|- repository: CellphoneRepository\l|+ createCellphone(...): Cellphone\l+ readCellphones(): ArrayList\<Cellphone\>\l}"];
+  View [label="{CellphoneView|- controller: CellphoneController\l|+ start(): Promise\<void\>\l- createCellphone(): Promise\<void\>\l- showCellphones(): void\l}"];
+  Main [label="{main.ts|+ main(): Promise\<void\>\l}", fillcolor="#E6F2ED"];
+  Json [label="{cellphones.json|[CellphoneData, ...]\l}", fillcolor="#FFF5DF", color="#AF8844"];
+
+  Main -> View [label="creates"];
+  Main -> Controller [label="creates"];
+  Main -> Repository [label="creates"];
+  View -> Controller [label="uses"];
+  Controller -> Repository [label="uses"];
+  Controller -> Cellphone [label="creates"];
+  Repository -> ArrayList [label="returns"];
+  Repository -> Cellphone [label="rebuilds"];
+  Repository -> Json [label="reads / writes", style=dashed];
+  ArrayList -> Cellphone [label="contains T = Cellphone", style=dashed];
+}

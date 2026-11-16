@@ -1,0 +1,23 @@
+--no-fonts
+-encoding
+'UTF-8'
+-protected
+--release
+25
+-sourcepath
+'C:/Users/dy456/Desktop/ESPE2609-OOPSW36863/ws/cumbajin/U2/ws23AnimalFarmPrototype/Animal/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/dy456/Desktop/ESPE2609-OOPSW36863/ws/cumbajin/U2/ws23AnimalFarmPrototype/Animal/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Animal 1.0.0 API'
+-use
+-version
+-windowtitle
+'Animal 1.0.0 API'

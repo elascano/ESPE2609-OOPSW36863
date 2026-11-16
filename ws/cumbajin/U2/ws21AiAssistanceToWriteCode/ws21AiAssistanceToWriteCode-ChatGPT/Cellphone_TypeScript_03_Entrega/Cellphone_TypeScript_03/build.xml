@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NetBeans Ant Free-Form project: TypeScript is compiled by npm, NOT javac. -->
+<project name="Cellphone_TypeScript_03" default="build" basedir=".">
+    <condition property="npm.executable" value="npm.cmd" else="npm">
+        <os family="windows"/>
+    </condition>
+
+    <target name="install" description="Install TypeScript developer dependencies">
+        <exec executable="${npm.executable}" dir="${basedir}" failonerror="true">
+            <arg value="install"/>
+        </exec>
+    </target>
+
+    <target name="build" description="Compile TypeScript source code to JavaScript">
+        <exec executable="${npm.executable}" dir="${basedir}" failonerror="true">
+            <arg value="run"/>
+            <arg value="build"/>
+        </exec>
+    </target>
+
+    <target name="clean" description="Remove JavaScript compilation output">
+        <delete dir="${basedir}/dist"/>
+    </target>
+</project>

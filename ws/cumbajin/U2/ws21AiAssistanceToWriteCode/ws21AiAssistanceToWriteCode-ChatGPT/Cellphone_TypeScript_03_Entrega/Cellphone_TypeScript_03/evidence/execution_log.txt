@@ -1,0 +1,58 @@
+
+========== CELLPHONE SYSTEM ==========
+1. Create cellphone
+2. Read cellphones from JSON
+3. Exit
+Choose an option: 1
+
+
+--- REGISTER CELLPHONE ---
+ID: CP001
+
+Brand: Samsung
+
+Model: Galaxy A55
+
+Storage (GB): 128
+
+Saved successfully: CP001 (Samsung Galaxy A55).
+JSON file: data/cellphones.json
+
+========== CELLPHONE SYSTEM ==========
+1. Create cellphone
+2. Read cellphones from JSON
+3. Exit
+Choose an option: 1
+
+
+--- REGISTER CELLPHONE ---
+ID: CP002
+
+Brand: Xiaomi
+
+Model: Redmi Note 13
+
+Storage (GB): 256
+
+Saved successfully: CP002 (Xiaomi Redmi Note 13).
+JSON file: data/cellphones.json
+
+========== CELLPHONE SYSTEM ==========
+1. Create cellphone
+2. Read cellphones from JSON
+3. Exit
+Choose an option: 2
+
+
+--- CELLPHONES READ FROM JSON ---
+ID: CP001 | Brand: Samsung | Model: Galaxy A55 | Storage: 128 GB
+ID: CP002 | Brand: Xiaomi | Model: Redmi Note 13 | Storage: 256 GB
+Total: 2 cellphone(s).
+
+========== CELLPHONE SYSTEM ==========
+1. Create cellphone
+2. Read cellphones from JSON
+3. Exit
+Choose an option: 3
+
+Goodbye!

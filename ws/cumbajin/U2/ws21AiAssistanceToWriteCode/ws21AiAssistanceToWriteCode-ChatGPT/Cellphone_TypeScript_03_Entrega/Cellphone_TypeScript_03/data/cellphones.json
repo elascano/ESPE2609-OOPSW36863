@@ -1,0 +1,20 @@
+[
+  {
+    "id": "CP001",
+    "brand": "Samsung",
+    "model": "Galaxy A55",
+    "storageGB": 128
+  },
+  {
+    "id": "CP002",
+    "brand": "Xiaomi",
+    "model": "Redmi Note 13",
+    "storageGB": 256
+  },
+  {
+    "id": "01",
+    "brand": "Samsung",
+    "model": "Note12",
+    "storageGB": 150
+  }
+]

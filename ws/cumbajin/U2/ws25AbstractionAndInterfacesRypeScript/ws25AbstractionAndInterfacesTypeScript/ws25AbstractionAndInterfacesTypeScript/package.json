@@ -1,0 +1,17 @@
+{
+  "name": "ws25-abstraction-and-interfaces-typescript",
+  "version": "1.0.0",
+  "description": "Workshop 25 - Abstraction and Interfaces",
+  "main": "dist/view/Animal.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/view/Animal.js",
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\""
+  },
+  "author": "Dylan Cumbajin, MosQ, @ESPE",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
