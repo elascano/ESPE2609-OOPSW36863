@@ -1,0 +1,14 @@
+{
+  "name": "inheritance-code-ts",
+  "version": "1.0.0",
+  "description": "Julian's Animal Farm - inheritance example in TypeScript",
+  "main": "dist/view/AnimalFarmApp.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/view/AnimalFarmApp.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^6.0.0"
+  }
+}

@@ -75,6 +75,7 @@ public class AnimalFarmApp {
         System.out.println("Chicken -->" + chicken2);
         chicken2.feed(foodChicken, 20, "g");
         chicken2.layAnEgg();
+        chicken2.giveBirth(2);
         chicken2.cuts(cutsChicken);
         System.out.println("");
 
@@ -99,7 +100,7 @@ public class AnimalFarmApp {
         pig.cuts(cutsPig);
         System.out.println("");
 
-        Sheep sheep = new Sheep(true, new Date(2020 - 1900, 10, 23), 5, 3, 1, "Merino", bornOnDate);
+        Sheep sheep = new Sheep(true, new Date(2020-1900, 10, 23), 5, 3, 1, "Merino", bornOnDate);
         System.out.println("Sheep -->" + sheep);
         sheep.feed(foodSheep, 15, "Kg");
         sheep.graze(locationSheep);

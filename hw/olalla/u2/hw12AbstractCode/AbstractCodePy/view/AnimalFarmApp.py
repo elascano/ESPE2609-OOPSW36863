@@ -2,33 +2,60 @@ from datetime import date
 
 from model.Chicken import Chicken
 from model.Cow import Cow
+from model.Cuts import Cuts
+from model.Food import Food
+from model.Location import Location
 from model.Pig import Pig
 from model.Sheep import Sheep
 
 
 def main():
     born_on_date = date.today()
-    print("Hello this is Julian's Animal Farm!\n")
+    print("Hello this is Julian's Animal Farm!")
 
-    chicken = Chicken(1, "Paleesh", born_on_date, True, 10, True)
+    food_chicken = Food("corn")
+    food_cow = Food("hay")
+    food_pig = Food("Corn and Soy")
+    food_sheep = Food("hay")
+
+    cuts_chicken = Cuts("wings, breast, thighs")
+    cuts_cow = Cuts("sirloin, ribeye, brisket")
+    cuts_pig = Cuts("ribs, ham, bacon")
+    cuts_sheep = Cuts("leg, shoulder, rack")
+
+    location_cow = Location(1, "North pasture")
+    location_sheep = Location(2, "Hill pasture")
+
+    chicken = Chicken(1, "Paleesh", born_on_date, 0, True, 10, True)
     print(chicken)
-    chicken.lay_an_egg()
-    print(f"The chicken says: {chicken.make_sound()}", "\n")
+    chicken.feed(food_chicken, 100, "g")
+    chicken.cuts(cuts_chicken)
+    print("\n")
 
-    cow = Cow(2, "Holstein", born_on_date, True, 25)
+    cow = Cow(2, "Holstein", born_on_date, 0, True, 25.0)
     print(cow)
-    cow.milk()
-    print(f"The cow says: {cow.make_sound()}", "\n")
+    cow.feed(food_cow, 20, "kg")
+    cow.cuts(cuts_cow)
+    cow.graze(location_cow)
+    print("\n")
 
-    pig = Pig(3, "Duroc", born_on_date, True)
+    pig = Pig(3, "Duroc", born_on_date, 5, 25.0, False)
     print(pig)
-    pig.cleaning()
-    print(f"The pig says: {pig.make_sound()}", "\n")
-
-    sheep = Sheep(4, "Merino", born_on_date, date(2026, 4, 1), True, 5)
-    print(sheep)
-    sheep.milk()
-    print(f"The sheep says: {sheep.make_sound()}", "\n")
+    pig.feed(food_pig, 100, "Kg")
+    pig.cuts(cuts_pig)
+    pig.gain_weight(4.5)
+    pig.produce_manure(2.5, "kg")
+    pig.give_birth(8)
+    print("\n")
+    
+    sheep = Sheep(4, "Merino", born_on_date, 3, True, date(2026, 4, 1), 5.0)    
+    print(sheep)    
+    sheep.feed(food_sheep, 15, "Kg")
+    sheep.cuts(cuts_sheep)
+    sheep.graze(location_sheep)
+    sheep.shear()
+    sheep.wool_produce_per_month(3.2, "kg")
+    sheep.give_birth(2)
 
 
 if __name__ == "__main__":

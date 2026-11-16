@@ -21,8 +21,8 @@ public class Pig extends FarmAnimal {
         System.out.println("Cutting a pig into --> " + cuts);
     }
     
-    public void gainWeight(float kg) {
-        System.out.println("The currently weight of the pig --> " + kg);
+    public void gainWeight(float weightInKg) {
+        System.out.println("The currently weight of the pig --> " + weightInKg);
     }
 
     public void produceManure(float manure, String unit){

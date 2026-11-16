@@ -1,21 +1,31 @@
 from model.FarmAnimal import FarmAnimal
+from model.GrazeAnimal import GrazeAnimal
 
 
-class Sheep(FarmAnimal):
-    def __init__(self, animal_id, breed, born_on_date, last_shearing, 
-                 producing_milk, litters_of_milk):
-        super().__init__(animal_id, breed, born_on_date)
+class Sheep(FarmAnimal, GrazeAnimal):
+    def __init__(self, animal_id, breed, born_on_date, number_of_offspring,
+                 is_ready_to_shear, last_shearing, wool_kg_per_shearing):
+        super().__init__(animal_id, breed, born_on_date, number_of_offspring)
+        self.is_ready_to_shear = is_ready_to_shear
         self.last_shearing = last_shearing
-        self.producing_milk = producing_milk
-        self.litters_of_milk = litters_of_milk
+        self.wool_kg_per_shearing = wool_kg_per_shearing
 
-    def milk(self):
-        print("Sheep with milk")
+    def graze(self, location):
+        print(f"Sending the sheep to eat grass at --> {location}")
 
-    def make_sound(self):
-        return "Baa!"
+    def feed(self, food, amount_of_food, unit):
+        print(f"Feeding a sheep with --> {amount_of_food}{unit} of {food}")
+
+    def cuts(self, cuts):
+        print(f"Cutting a sheep into --> {cuts}")
+
+    def shear(self):
+        print("Shearing the sheep...")
+
+    def wool_produce_per_month(self, wool, unit):
+        print(f"Wool produced --> {wool}{unit}")
 
     def __str__(self):
-        return (f"{super().__str__()} | last_shearing={self.last_shearing}"
-                f"producing_milk={self.producing_milk}, "
-                f"litters_of_milk={self.litters_of_milk}")
+        return (f"{super().__str__()} | ready_to_shear={self.is_ready_to_shear}, "
+                f"last_shearing={self.last_shearing}, "
+                f"wool_kg_per_shearing={self.wool_kg_per_shearing}")
