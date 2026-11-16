@@ -1,0 +1,31 @@
+{
+    "food_inventory": [],
+    "animals": [
+        {
+            "id": 1,
+            "type": "Chicken",
+            "breed": "Choilsen",
+            "born_on_date": "2025-11-12",
+            "weight_in_kg": 1.5,
+            "sex": "F",
+            "is_meat": false,
+            "medicines_record": [],
+            "is_molting": false,
+            "number_of_laid_eggs": 12,
+            "type_chicken": "layer"
+        },
+        {
+            "id": 2,
+            "type": "Cow",
+            "breed": "Holsteirn",
+            "born_on_date": "2025-01-31",
+            "weight_in_kg": 360,
+            "sex": "F",
+            "is_meat": false,
+            "medicines_record": [],
+            "pregnant": true,
+            "is_producing_milk": true,
+            "liters_of_milk_per_week": 12
+        }
+    ]
+}

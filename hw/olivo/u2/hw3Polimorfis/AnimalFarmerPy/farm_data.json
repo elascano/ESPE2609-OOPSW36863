@@ -1,0 +1,29 @@
+{
+    "food_inventory": [],
+    "animals": [
+        {
+            "type": "Chicken",
+            "breed": "sussex",
+            "born_on_date": "02-09-2024",
+            "weight_in_kg": 1.5,
+            "sex": "F",
+            "is_meat": false,
+            "medicines_record": [],
+            "is_molting": false,
+            "number_of_laid_eggs": 3,
+            "type_chicken": "broiler"
+        },
+        {
+            "type": "Cow",
+            "breed": "Holsstein",
+            "born_on_date": "05-11-2022",
+            "weight_in_kg": 45.0,
+            "sex": "f",
+            "is_meat": false,
+            "medicines_record": [],
+            "pregnant": false,
+            "is_producing_milk": true,
+            "liters_of_milk_per_week": 10.0
+        }
+    ]
+}
