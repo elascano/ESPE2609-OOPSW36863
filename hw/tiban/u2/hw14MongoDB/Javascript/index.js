@@ -1,3 +1,4 @@
+const path = require('path');
 const { MongoClient } = require('mongodb');
 const readline = require('readline/promises');
 const { stdin: input, stdout: output } = require('process');
@@ -55,8 +56,8 @@ class MongoManager {
 }
 
 async function main() {
-    const uri = "mongodb+srv://amtiban1_db_user:DYaZkdg5WiHEuJDM@cluster0.ku0zu6t.mongodb.net/?retryWrites=true&w=majority";
-    const manager = new MongoManager(uri, "hw14", "Javascript");
+    process.loadEnvFile(path.join(__dirname, '../.env'));
+    const uri = process.env.MONGO_URI;    const manager = new MongoManager(uri, "hw14", "Javascript");
     const rl = readline.createInterface({ input, output });
 
     try {

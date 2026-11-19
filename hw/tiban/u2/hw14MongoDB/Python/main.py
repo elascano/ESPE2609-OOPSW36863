@@ -1,5 +1,8 @@
 from pymongo import MongoClient
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class Client:
     def __init__(self, client_id, name, age, money_spent):
@@ -49,7 +52,7 @@ class MongoManager:
 
 
 def main():
-    uri = "mongodb+srv://amtiban1_db_user:DYaZkdg5WiHEuJDM@cluster0.ku0zu6t.mongodb.net/?retryWrites=true&w=majority"
+    uri = os.getenv("MONGO_URI")
     manager = MongoManager(uri, "hw14", "python")
 
     try:
