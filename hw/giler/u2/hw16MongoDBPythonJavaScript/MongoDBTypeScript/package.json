@@ -1,0 +1,22 @@
+{
+  "name": "mongodbtypescript",
+  "version": "1.0.0",
+  "description": "CRUD operations with MongoDB Atlas and TypeScript",
+  "main": "customer.ts",
+  "scripts": {
+    "start": "ts-node customer.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "mongodb": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  }
+}
