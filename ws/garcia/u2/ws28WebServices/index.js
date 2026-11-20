@@ -4,7 +4,7 @@ dns.setServers(['8.8.8.8', '1.1.1.1']);
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-mongoose.connect(`mongodb+srv://jagarcia31_db_user:IyMayXDh7IX8laHf@store.6hiukqd.mongodb.net/OOP`);
+mongoose.connect(`mongodb+srv://jagarcia31_db_user:OOP@store.6hiukqd.mongodb.net/OOP`);
 
 const db = mongoose.connection;
 db.on("error", (error) => console.error(error));
