@@ -11,6 +11,10 @@ public class Pig extends FarmAnimal {
     private float weightInKg;
     private boolean isPregnant;
     
+    public void select(){
+        System.out.println("selecting the pig for slaughter ");  
+    }
+    
     @Override
     public void feed(Food food, int amountOfFood) {
         System.out.println("feeding a pig with ---> " + amountOfFood + "kg of " + food );

@@ -36,9 +36,10 @@ public class AnimalFarmApp {
         FarmAnimal cow1 = new Chicken(true, 4, true, 0, "palish", LocalDate.now());
         System.out.println("cow is a ---> " + chicken.getClass().getSimpleName());
         
-        FarmAnimal pig = new Pig(true, 120.0F, false, 4, "Yorkshire", LocalDate.now());
+        Pig pig = new Pig(true, 120.0F, false, 4, "Yorkshire", LocalDate.now());
         
         System.out.println("pig ---> " + pig);
+        pig.select();
         Food food3 = new Food("vegetables and fruits");
         
         Sheep sheep = new Sheep(LocalDate.of(2025, 11, 11), true, 4.0F, 5,"Merino", LocalDate.of(2021,10,28));
