@@ -17,3 +17,4 @@ def delete_customer(customer_id):
     collection.delete_one({"id": customer_id})
 
 add_customer(4, "Maria", 22, 1500.50)
+delete_customer(4)
