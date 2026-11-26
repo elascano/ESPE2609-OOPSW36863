@@ -73,6 +73,5 @@ public abstract class FarmAnimal {
     public void setBornOnDate(LocalDate bornOnDate) {
         this.bornOnDate = bornOnDate;
     }
-
     
 }
