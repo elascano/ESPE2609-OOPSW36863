@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="contactbook.css" />
+  </head>
+  <body>
+    <main class="contact-window">
+      <h1>CONTACTS</h1>
+      <div class="separator"></div>
+      <form id="contactForm">
+        <section class="column left-column">
+          <label>id:<input id="id" type="number" min="0" /></label>
+          <label>First Name:<input id="firstName" required /></label>
+          <label>Last Name:<input id="lastName" required /></label>
+          <label>Email:<input id="email" type="email" /></label>
+          <label class="known"><span>Known:</span><span><input id="isKnown" type="checkbox" /> Yes</span></label>
+          <label>Cellphone:<input id="cellPhoneNumber" /></label>
+        </section>
+        <section class="column right-column">
+          <label>Type:<select id="type"><option>Friend</option><option>Family</option><option>Work</option><option>Other</option></select></label>
+          <label>Gender:<select id="gender"><option>Male</option><option>Female</option><option>Other</option></select></label>
+          <label class="hobbies-label">Hobbies:<select id="hobbies" multiple size="7"><option>Play Guitar</option><option>Play Soccer</option><option>Watch TV</option><option>Video Games</option><option>Listen to music</option><option>Reading</option><option>Cook</option></select></label>
+          <label>Instagram:<input id="instagram" /></label>
+          <label>Birth Date:<input id="birthDate" placeholder="MM/dd/yyyy" /></label>
+        </section>
+        <div class="actions"><button type="submit">Save</button><button type="button" id="update">Update</button><button type="button" id="delete" class="danger">Delete</button><button type="button" id="clear" class="secondary">Clear</button><span id="status">Ready</span></div>
+      </form>
+    </main>
+    <script src="contactbook.js"></script>
+  </body>
+</html>
