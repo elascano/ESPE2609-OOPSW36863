@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "none",
+    "lib": ["ES2019", "DOM"],
+    "outFile": "dist/app.js",
+    "strict": true,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "noEmitOnError": true
+  },
+  "files": [
+    "src/model/contact.ts",
+    "src/view/frm_contacts.ts",
+    "src/main.ts"
+  ]
+}

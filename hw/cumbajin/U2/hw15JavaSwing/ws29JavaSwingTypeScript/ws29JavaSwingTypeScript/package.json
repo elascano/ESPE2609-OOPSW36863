@@ -1,0 +1,13 @@
+{
+  "name": "ws29-java-swing-typescript",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ContactBook WS29: conversion del formulario original Java Swing a TypeScript.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,20 @@
+:root { font-family: "Segoe UI", Arial, sans-serif; color: #172b4d; background: #f4f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+.page { width: min(960px, calc(100% - 44px)); margin: 46px auto; }
+.page-header { margin-bottom: 23px; }
+.course-label { font-size: 11px; font-weight: 700; color: #708198; letter-spacing: .12em; margin-bottom: 9px; }
+h1 { margin: 0; font-size: clamp(30px, 5vw, 40px); font-weight: 700; letter-spacing: .015em; color: #1b3355; }
+.page-header p { font-size: 14px; color: #66788c; margin: 5px 0 0; }
+.contact-card { background: white; border: 1px solid #dbe4ef; border-radius: 12px; padding: 36px; box-shadow: 0 10px 24px rgba(30,65,110,.045); }
+.panel-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 60px; }
+h2 { font-size: 17px; margin: 0 0 26px; color: #1b3355; font-weight: 700; }
+.form-field { display: grid; grid-template-columns: 122px minmax(0,1fr); gap: 12px; min-height: 48px; align-items: center; margin-bottom: 8px; }
+.form-field > label:not(.checkbox-label), .field-name, .label-row { color: #31465d; font-size: 14px; }
+.form-field input:not([type="checkbox"]) { width: 100%; border: 1px solid #cbd5e1; border-radius: 5px; min-height: 35px; padding: 7px 10px; color: #172b4d; font: inherit; font-size: 14px; background: #fff; }
+.form-field input:focus { outline: 2px solid #82a6d8; outline-offset: 1px; border-color: #7598c5; }
+.checkbox-label { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: #172b4d; width: fit-content; }
+.checkbox-label input { accent-color: #275f9d; width: 16px; height: 16px; }
+.label-row { min-height: 48px; display: flex; align-items: center; margin-bottom: 8px; }
+@media (max-width: 720px) { .page { margin: 24px auto; } .contact-card { padding: 23px 20px; } .panel-grid { grid-template-columns: 1fr; gap: 26px; } h2 { margin-bottom: 17px; } }
+@media (max-width: 400px) { .form-field { grid-template-columns: 105px minmax(0,1fr); gap: 7px; } }
